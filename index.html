@@ -1,62 +1,140 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>
-Think Digital - Automation of Software
+Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchester London
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
 <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
- <div id="particles-js"></div>  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
-<script>
-particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
-</script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <style>
-/* ---- reset ---- */ body{  } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%;  background-image: url(""); background-repeat: no-repeat; background-size: 80% cover; background-position: 50% 50%; } 
-</style>
-<style>
-html, body {
-padding:0;
-margin:0;
-  
-    background-color: rgb(163, 41, 59); /* For browsers that do not support gradients */
-
- 
-/*linear-gradient(to right, #4B0082 , #FF7F50); *//* Standard syntax (must be last) */
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	background-image:url('img/street-art-w.png');
+	background-color:rgba(000,111,89,0.2);
+	margin:0;
+	top:0;
 	font-family: 'Share Tech', sans-serif;
+}
+.maincont {
+	background-color:rgba(255,0,34,0.8);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
 
 }
-.logo{
-  height:auto;
-  width:auto;
-  
-
- 
+.header {
+    position:relative;
+	height: 480px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
 }
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.jpg");
+			height: 100%;
 
-.home{
-   display: inline-block;
-    cursor: pointer;
-	float:left;
-	margin:1em;
-	font-size:2em;
-	text-decoration:none;
-	font-weight:bold;
-}
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
 
-.container {
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
     display: inline-block;
     cursor: pointer;
 	right: 5px;
 	margin:1em;
 	position:fixed;
 }
-
+/*the nav icon style*/
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #FFF;
+    background-color: #CCC;
     margin: 6px 0;
+	z-index: 8;
     transition: 0.4s;
 }
 
@@ -71,10 +149,10 @@ margin:0;
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-a{
-text-decoration:none;
-color:#FFF;
-cursor:pointer;
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
 }
 .topbase{
 font-size:1.5em;
@@ -84,11 +162,12 @@ float:left;
 .sidenav {
     height: 100%;
     width: 0;
+	z-index:9;
     position: fixed;
-    background-color:rgba(255,0,34,0.7);
+    background-color:rgba(255,0,34,0.8);
     top: 70px;
     right: 0;
-    color:#000;
+    color:#FFF;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -101,7 +180,6 @@ float:left;
     color: #FFF;
     display: block;
     transition: 0.3s;
-	    color:#000;
 }
 
 .sidenav a:hover {
@@ -115,45 +193,78 @@ float:left;
     top:0;
 	display: block;
 	right:5px;
-    
-    
-    
-	
 }
-.maincont {
-	background-color:rgba(255,127,80,0.5);
-	padding: 25px;
-	margin: 25px;
-        font-size:1.5em;
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
 
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
 }
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
 .clickbox {
 	border-style: solid;
   	border-width: 5px;
-	border-color: #FFFFFF;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
 	color: FFFFFF;
 	text-align:center;
-	display: table-cell;
+	
 	padding: 42px;
 	margin: 42px;
-	width: 30%;
+	max-width: 30% !important;
+	background-image: url("img/street-art.jpg");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
 
 }
-
-
-
-#video{
-    width:100%;
-    position:absolute;
-    top:0;
-    left:0;
-   
-    /*background: linear-gradient(to right, #4B0082 , #FF7F50);*/
-}
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
+.clickbox:hover{opacity:1;transition:1s;}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -161,12 +272,13 @@ float:left;
 }
 </style>
 <script>
+		
 function myFunction(x) {
     x.classList.toggle("change");
     
 }
 function openNav() {
-    document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
     document.getElementById("mySidenav").style.width = "17em";
     document.getElementById("main").style.marginRight = "17em";
     document.body.style.backgroundColor = "rgba(255,255,255,0)";
@@ -174,23 +286,43 @@ function openNav() {
 }
 
 function closeNav() {
-	document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
     	document.getElementById("mySidenav").style.width = "0";
     	document.getElementById("main").style.marginRight= "0";
     	document.body.style.backgroundColor = "white";
     
 }
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
 </script>
 </head>
 <body>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-012738ae-42e1-44da-b224-94d781e53c7d"></div>
-
 <div>
-  <div>
    <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
   <table><tr><td>
-<img src="img/mobile.png" style="height:80px;width:50px;">
+<img src="img/mobile2.png" style="height:60px;width:auto;">
   </div></td><td>
   <div style="dispaly:table-column;">
     <div style="dispaly:table-cell;">
@@ -199,15 +331,14 @@ CONTACTS:
   <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
 <a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
   </div>
-  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.5);padding:5px;">
-<a href="mailto:info@thinkdigital.org" style="color:#FFFFFF;">info@thinkdigital.org</a>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigital.js.org" style="color:#FFFFFF;">info@thinkdigital.js.org</a>
   </div>
   </div>
 </td></tr>
 </table>
   </div>
-
-<div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -215,50 +346,152 @@ CONTACTS:
 
 
 <div id="mySidenav" class="sidenav">
-  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav();" title="Close Menu">X</a>-->
-  <a href="index.html" title="Home">HOME</a>
-  
-  <a href="#seminars-and-training" title="SEMINARS">Seminars</a>
-<a href="#training-your-staff" title="Training">Learn to Code</a>
+  <a href="index.html" title="Home">Home</a>
+  <a href="#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="#seo-ppc" title="SEO / PPC">SEO/ PPC</a>
+    <a href="#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="#contacts" title="contact web deisgners near me">Contacts</a>
 
-  <a href="#contact" title="contact web deisgners near me">Contacts</a>
-
-  <a href="resources.html" title="web resources">Resources</a>
 </div>
 </div>
+<div style="text-align:center;z-index:1;">
 
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
 
-<!-- cookie acceptANCE ICON -->
-<script>
-function disappear(){
-document.getElementById("cookiething").style.visibility = "hidden";
-}
-</script>
-<div class="logo" style="text-align:center;left:200px;">
-<img src="img/TDh1.png" >
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
 </div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
 
-<!-- end -->
+	Think Digital operates across disciplines including Web Development, Search
+Engine Optimisation, Social Media Marketing and Training.<br></br>
+<h1 id="projects">Our Projects</h1>
+This website services as the front-end of a GitHub pages set of projects. 
+Think Digital comprises a series of projects to develop Algorithmic Trading 
+and Atifical Intelligence research through this portal.
+This will include subject such as AI, which is still hazily defined but it 
+categorized by us in two areas, MACHINE LEARNING + HUMAN SIMULATION.
+<br>
+From these two catagories come Natural Language Processing and Chat Bot experiences. 
+See how these emerging new tecthnologies can leverage the automation of 
+your organisation and build an inspirational set of wonders.
+These software development projects include the following:
+<div class="outerflex">
+<div class="clickbox">
+DIGITAL CURRENCY PROJECT
+</div>
+<div class="clickbox">
+DIGITAL SIGNING PROJECT
+</div>
+<div class="clickbox">
+ALGO TRADING PROJECT
+</div>
+</div>
 <br></br>
-<div id="content" class="maincont" style="text-align:center;">
+This venture into AI involves USability research as this ergonomic graming of development 
+is central to effective artifical delivery of intelligence. We therefore conduct
+detail userability research such as the following:
+<br></br>
+<div class="outerflex">
+<div class="clickbox">
+USABILITY REPORT AI
+</div>
+<div class="clickbox">
+USABILITY REPORT TWO
+</div>
+<div class="clickbox">
+USABILITY REPORT THREE
+</div>
+</div>
+<br></br>
+Think Digital offers a range of training services. <br>
+Drawing on over 12 year industry experience to specilise in large scale web 
+development. These developments lend themselves best to projects where SEO 
+is a priority.<br></br>
+Think Digital offers a range of training services.</br>
+Drawing on faculty level education HE level,
+Think Digital offers seminar style mentoring sessions including learning WordPress in 
+24 hours, 
+learn Front End Fundamentals in less than a week, to more complex tutorial assistance.
+<div class="outerflex">
+<div class="clickbox" id="web-dev">
+WEB DEVELOPEMENT
+</div>
+<div class="clickbox">
+SEO / PPC / SOCIAL
+</div>
+<div class="clickbox">
+TRAINING AND SEMINARS
+</div>
+</div>
+<h2>Web Development</h2>
+Outsource your Projects to use for automatic running of tedious work such as browser 
+compatibility optimisation, mass image convertion to scalable graphics and beutifying 
+code. <br></br>
+We do this with Webpack Compilers who our experts have authored books about and
+ can even upgrade and migrate your 
+software to different frameworks in an automatic way in a matter of hours.
+Social Media is a lot more straight forward but can get competive, 
+especialilly if you wnat to leverage real performace. There are two sorts, 
+organic and premium. Premium permits targetted adds, organic will enhance your
+ premium results dramtically and need to be organised first. Twitter , Facebook and 
+ Instagram, Youtube and more. All these platform trade off each otehr and depending on
+  the competeition 
+and style of your business and industry, the approach may differ.
+<h2 id="seo-ppc">SEO</h2>
+Think Digital draws on over 11 year industry experience to specilise in large scale web development. These 
+developments lend themselves best to projects where SEO is a priority.
+Think Digital offers a range of training services.
+<h2 id="upskill-your-people">Training</h2>
+Management courses from MSc qualified instructors.
+<br></br>
+<h1 id="PORTFOLIO">Portfolio</h1>
 
-Think Digital is a project to develop an Algorithmic Trading and Atifical Intelligence research portal
+<div class="clip-polygon">
+<div class="portfolio">
+
+   <div id="kf"><img scr="img/kf.png" style="opacity:0;"></div>
+   <div id="hs"><img scr="img/hs.png" style="opacity:0;"></div>
+   <div id="es"><img scr="img/es.png" style="opacity:0;"></div>
+   <div id="cc"><img scr="img/cc.png" style="opacity:0;"></div>
+
+</div>
 </div>
 
-<div id="main-body" class="maincont" style="background-color:#FFFFFF;text-align:center;">
-
-AI is still hazily defined but it categorized by us in two areas.
-<br></br>
-<span style="background-color:rgb(163, 41, 59);color:#FFF;padding:0.5em;">
-MACHINE LEARNING</span> + 
-<span style="background-color:rgb(163, 41, 59);color:#FFF;padding:0.5em;">
-HUMAN SIMULATION</span>
-<br></br>
-From these two catagories come Natural Language Processing and Chat Bot experiences.
-See how these emerging new tecthnologies can leverage the automation 
-of your organisation and build an inspirational set of wonders.
-
+<div class="controls">
+<!-- Ant probs with portfolio nav seesm to be these buttons-->
+<span onmouseover="openKf();"><div><img id="clickthru" src="img/space.png"></div></span>
+<span onmouseover="openHs();"><div><img id="clickthru" src="img/space.png"></div></span>
+<span onmouseover="openEs();"><div><img id="clickthru" src="img/space.png"></div></span>
+<span onmouseover="openCc();"><div><img id="clickthru" src="img/space.png"></div></span>
 </div>
+A selection of some of our projects.
+<h1 id="contacts">Contacts</h1>
+WHERE ARE WE BASED? <br></br>
+Liverpool City Centre, UK<br>
+In the heart of the Fabric District.<br></br>
+I'd love your feedback!<br></br>
+Please use the live chat for immediate response.<br></br>
+Dont forget to leave a number or email address.<br>
 
-</body>
-</html>
+
+	</div>
+	</div>
+	<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	<div style="margin-left:3em;line-height:3em;">
+	<br></br>
+	<a href="#">Sitemap</a><br>
+	<a href="#">Lead Developer</a><br>
+	<a href="#">Partners</a><br>
+	<a href="#">Associates</a><br>
+	<a href="#">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="#projects" title="web resources">Projects</a><br>
+	</div>
+	</div>
+</footer>
