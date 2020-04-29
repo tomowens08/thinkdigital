@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchester London
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	
+	background-color:rgba(225,22,0,0.9);
+	margin:0;
+	top:0;
+	font-family: 'Share Tech', sans-serif;
+}
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
+.maincont {
+	background-color:rgba(222,222,1111,0.9);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
+
+}
+.header {
+    position:relative;
+	height: 200px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
+}
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
+
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
+    display: inline-block;
+    cursor: pointer;
+	right: 5px;
+	margin:1em;
+	position:fixed;
+}
+/*the nav icon style*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CCC;
+    margin: 6px 0;
+	z-index: 8;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
+}
+.topbase{
+font-size:1.5em;
+margin:1.5em;
+float:left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+	z-index:9;
+    position: fixed;
+    background-color:rgba(255,0,34,0.8);
+    top: 70px;
+    right: 0;
+    color:#FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    background-color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	padding: 8px 8px 8px 32px;
+    top:0;
+	display: block;
+	right:5px;
+}
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
+
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
+}
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
+.clickbox {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
+	color: FFFFFF;
+	text-align:center;
+	
+	padding: 42px;
+	margin: 42px;
+	max-width: 30% !important;
+	background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+
+}
+.clickbox:hover{opacity:1;transition:1s;}
+
+.clickbox-footer {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #000;
+	color: FFFFFF;
+	text-align:left;
+	padding: 5em;
+	margin: 5em;
+	margin-left:3em;
+	line-height:3em;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+		
+function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+function openNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+    document.getElementById("mySidenav").style.width = "17em";
+    document.getElementById("main").style.marginRight = "17em";
+    document.body.style.backgroundColor = "rgba(255,255,255,0)";
+
+}
+
+function closeNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginRight= "0";
+    	document.body.style.backgroundColor = "white";
+    
+}
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
+</script>
+</head>
+<body>
+<div>
+   <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
+  <table><tr><td>
+<img src="img/mobile2.png" style="height:60px;width:auto;">
+  </div></td><td>
+  <div style="dispaly:table-column;">
+    <div style="dispaly:table-cell;">
+CONTACTS: 
+    </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
+<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  </div>
+  </div>
+</td></tr>
+</table>
+  </div>
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" title="Home">Home</a>
+  <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
+  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
+  <a href="about-digital-agency.html" title="Home">About</a>
+  <a href="web-properties.html" title="WEB DEV">Web Property</a>
+  <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
+  <a href="training-index.html" title="Training">Training</a>
+
+</div>
+</div>
+<div style="text-align:center;z-index:1;">
+
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
+
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
+</div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
+<main>
+
+<h1>Contractor Services</h1>
+<p>
+I have worked as a contractor and continue t be available for bookings on a day rate.
+We continue to source contract roles on a day rate basis for a variety of specialisms.
+</p><p>
+We are not a typical agency, we are not a recruitment firm and can then return greater value to clients due to our model which is essentially a consortium f developers working together to find each other work and avoid referral commissions and multilevel chains of supply.
+</p><p>
+Our specialists are on hand or be it based remotely to deliver you needs, you can speak to them immediately and directly and our new accounts or business development staff work for the company and are not a third party. This protects the interests of developers like an agent rather than a corporate focused recruiter.
+</p><p>
+Our recruitment staff benefit from a pool of 100 or more developer specialists as well as not paying for office space and a virtually unlimited amount of coffee and tea.
+</p><p>
+This brings us to another service we offer which is to like for like professionals, lease partnership.
+</p>
+<p>
+We are a business based on recommendation.</p><p>
+Whether you are rolling out a whole new system to take advantage of the latest developments in network hardware and architectures, or modifying or extending an existing IP network, TD northwest can ensure that your network is installed professionally and optimised for performance, security, longevity, and cost.
+</p><p>
+Choosing between using in-house expertise or outsourcing the project is a key decision that should be made early on. 
+</p><p>
+One of the first things to consider is the level of in-house expertise available within your organisation. If your IT staff have minimal (or no) experience in IP network installation, then it is unreasonable to expect a fast, cost-effective, and optimally performing IP network installation from them. At TD northwest, our engineers specialise in network installation. When you bring to the table the experience of hundreds of WAN and LAN installations spanning years of hardware, software, and architectural developments, cost reduction and increased efficiency inevitably follow.
+</p>
+<p>
+We offer an integrated and all-round service.
+We provide cat5e, cat6 and fibre cabling systems to businesses of all sizes, education and government.
+</p><p>
+Whether your network is 2 computers or spread over multiple buildings we provide certified cat5 data structured cabling installations and planning for you. Our clients range from small owner ran businesses to large multi-national cable manufacturers, haulage companies, and charities.
+</p><p>
+Our centrally located office is ideally located for our data cable engineers to provide nationwide computer cable installations. With Chester, Liverpool and Manchester on our doorstop we provide quick turnkey network installation and design to the north of England and Wales.
+</p><p>
+Why not contact us now to arrange a consultant to visit with you to discuss your requirements
+</p><p>
+Structured Cabling;
+</p><p>
+Installation and termination services for Category 5e, Category 6 and Category 6a copper infrastructure.
+</p><p>
+Installation and termination services for Fibre Optic (multimode and singlemode – splice or cut and polish).
+</p><p>
+Network Hardware:
+</p><p>
+Installation and configuration services for switches and routers.
+</p><p>
+Installation and configuration services for firewall and other security appliances.
+</p><p>
+Installation and configuration services for IP Telephone systems and associated applications.
+</p><p>
+Installation and configuration services for Wireless networks.
+</p><p>
+Installation and configuration services for IP CCTV systems.
+
+ </p><p>
+
+TAGS: WEBSITE DESIGN, WEBSITE DEVELOPMENT, 
+SEARCH ENGINE MARKETING, ACROSS LIVERPOOL, CHESHIRE, LANCASHIRE, 
+KIRKBY, GARSTON, SPEKE, RUNCORN, MANCHESTER, LONDON, SAN DIEGO, NEW YORK AND 
+THE REST OF THE WORLD. NETWORK INSTALLATION, CAT 5, CAT 6, INTEGRATED SYSTEMS.</p>
+
+<h1>Services List:</h1>
+<p>
+Managed Hosting and Self Service Hosting
+</p><p>
+Website Design and Development
+</p><p>
+Search Marketing and Website Optimisation
+</p><p>
+Graphic Design incl. Motion Graphics
+</p><p>
+Business email accounts, Business Formatted Emails and Email Campaigning Systems
+</p><p>
+Printing service for Business Cards and Brochures.
+</p><p>
+Ecommerce/ Shopping Cart Systems for any size of Budget.
+</p><p>
+Website Funding, we can secure Grants for Merseyside based Companies in the interests of Web Promotions.
+</p><p>
+A Knowsley, Liverpool, Merseyside based Design Company
+</p><p>
+Owens- Media is a Knowsley, Liverpool based website design company servicing the whole of the Northwest and the rest of the world for remote work.
+</p><p>
+Not a typical Advertising and design agency rather a New Media, Adverting, Marketing and Design company. With little or no overheads you speak to the designers direct, not a middle man as with agencies. This cuts cost, service time and communication problems.
+</p><p>
+Unlike other companies in most cases a consultant-designer will visit you on your premises for projects over a certain price.
+</p><p>
+Simple affordable solutions, flexible on terms and provider of ready built products. Get everything you need to be on the web with as little fuss and jargon as possible.
+</p><p>
+We also service Croxteh, Maghull, Ormskirk, Southport, Runcorn, Rainford and St Helens.
+</p><p>
+<h2>TYPES OF WEBSITE</h2>
+<p>
+From a simple one page website that will not stretch your budget, to the standard layout 4 page site, common on the web that lets your customer know a little more about your business ( the primary reason for any website ). Standard websites of the same type but a little more content and so a little more, such as huge amount of images. We also provide e-commerce stores with a variety of payment solution for all sizes of budgets and requirements, usually defined as either large volume or small volume selling.</p>
+
+<h2>UPDATES</h2>
+<p>
+We can also offer you the ability to update the website yourself with a system that website developers call, Content Management Solutions or CMS's. They basically give you a control panel to modify the text, or sometime imagery and even colour scheme and logo of your website. This type of system is a little more pricey. If your are looking for a CMS, please let us now early on since this will be fundamental to the development of the website. We also offer inclusive and UNLIMITED updates performed by us for the term of the hosting agreement, for around the same price.</p>
+
+<h2>DELIVERY</h2>
+<p>
+The very basic website types listed above can take only 1-2 weeks to develop. This can only be guaranteed when all necessary imagery or other content is both decided on by yourself and us and delivered to or in the possession of ourselves. Other content can include a logo design or video or text content such as a company statement. We offer also copy writing services and digital photography at your premises. This latter stuff will need to be discussed before the project starts at the initial consultation so you can have a website you are proud of.</p>
+
+<h2>INTERNET MARKETING & SEO</h2>
+<p>
+You may be concerned about marketing your website on the web. That is using your website as an advertising tool rather than an information portal. This all comes under the heading of Internet Marketing, as does Search Engine Optimization (SEO). This basically is a method of getting your site near the top of search engines like Google.
+</p><p>
+Internet Marketing also covered the task of using paid-for advertising like Google Adwords to get people clicking on your link, so they are taken to your website. This does not actually mean that they will pay for anything, it just gets them there. There are other channels of Internet Marketing; such as being listed in much larger and busier sites and therefore standing more chance of getting people to you, some people get a Facebook page for instance. This whole system requires research; reviewing your competition and how they perform in terms of visibility in search engines and on busier sites, then seeing whether it is cost effective to compete on a certain subject or concentrate on offering something different.
+</p><p>
+Many SEO companies out there offer a FREE website review, and we are no different. You will need a website first though, that's the catch! We can however conduct an industry review of your competitors. SEO is an ongoing thing to adapt to changing marketing conditions but don't forget that the average conversion to a sale from a visit to a website is 1 in 100 for all types of business.
+</p><p>
+All our website packages come with a standard SEO service which includes; meta-tagging of all image content, titling each page and submission to Google.
+</p><p>
+In terms of further Internet Marketing, we handle it separately from your original website, but you will need a website just to start. So let's get started.
+</p><p>
+We can monitor and report to you on the SEO activities of your competition at regular intervals.
+</p>
+<h2>DOMAINS & HOSTING</h2>
+<p>
+The only other concerns with a website are hosting and domain registration. Hosting; the place where the website files are stored only but we have factored all this in to the costs above, just in case you wanted some separate for some reason. Also please remember that usually hosting will need to be updated annually from the website launch date, this is the same with all other hosting providers, however with us, we can supply on-going hosting for only an installation charge. 
+</p><p>
+We are able to do this because we have a huge amount of space available which needs to be monitored for intrusion attempts anyway, in order to protect our own website, also having your website online as part of our portfolio is important for our own promotional needs. In return for this we can provide FOREVER HOSTING for the life of your website and our own provided you allow us to deliver a website of the quality we require in order to promote ourselves. 
+</p><p>
+This offer may only be available for some higher -end packages. Also since we build the website, we know that we don't have to worry about whether the coding of the website is insecure. Please ask your consultant about perpetual hosting. As part of our terms and conditions, we may supply you with a guaranteed availability period of 1 year or more, after which the forever hosting agreement may be ended by us at any time. We can't understand why no one else does this.
+</p><p>
+There's also the name of your website, the web-address or domain name. These need registering on an annual basis too, it's factored in with the costs above but after the initial registering from the project start date it will need updating every year or years, depending on the name chosen.
+</p><p>
+So choose your name and decide whether you wont us to register it for you, if so we will require that registration cost up front as a commitment to pay to full project cost.
+</p><p>
+We can also arrange enormous discounts for multiple domain name registration at once, thus protecting your companies identity from rivals.
+</p><p>
+We promote our selves with our portfolio content so we want that to stay live. If its designed by us we offer forever hosting, revocable at our wish after the subscription term. We charge an installation fee only and ask that the domain name be renewed only and immediately since a broken link will harm our search engine ranking so will be removed by us and replace with a live link.</p>
+
+<h2>GRAPHIC DESIGN</h2>
+<p>
+Due to our on-line expertise,we can also design your great, eye-catching traditional media such as flyers and posters to be printed off and delivered to maybe advertise your new website or some other event. We are usually the more cost effective option our specialised Graphic Designers and we will price you less than for having a website built.</p>
+
+<h2>TELEPHONE MARKETING & SUPPORT</h2><p>
+
+Research shows that most businesses in a position to purchase a website design or related service are experience periods of growth, generally it is customer demand that drives the building of a website. Since this is the case, many of our Clients have preferred to be working rather than devoting time to sitting in a designer's office, so we take the leg work out and sometimes contact our customers directly first through telephone and then by arranging meetings in person with a consultant at their premises as soon as convenient. With one of our consultants you can learn how your business can truly make a quick profit which sometimes wont cost you anything. We can advise of the most effective advertising medium out there for your business which may not of heard of. We do this free of charge in return for giving us your time.</p>
+<h1>UNLIMTED PACKAGE</h1>
+<p>
+This package includes custom website design to your specification or proofs, on-going search engine optimization management over the life of the hosting account, on-going hosting with unlimited space, unlimited e-mail address installation and support, any time e-mail support, business hours telephone support, virus protection, visitor tracking and continual internet marketing review. We provide this incredible package for a rolling contract term with payment to be made in instalments at the beginning of every month or quarter.
+</p><h1>
+UNLIMITED REVISIONS</h1><p>
+
+As the Unlimited Package but with unlimited revisions and redesigns to the website through out the term of the website. The is usually guaranteed for one year, and depending on the success of the website the exposure it gives us in terms of marketing ability, we may offer ongoing resign and revision subject to your requirements once payment has been made.</p>
+
+<h1>STANDARD WEBSITE DESIGN AND DEVELOPMENT</h1><p>
+
+Each of our website design packages comes fully optimised as standard for search engines and compliant to internet standard coding. We do not charge extra for use of Flash or dynamic content or set arbitrary prices.
+</p>
+<h1>
+SEARCH RELATIVE CONTENT</h1>
+
+What is it? This is the unusual Internet Marketing technique where we take your existing and fully optimised website and duplicate it. Each copy is placed along side your original, link by a site map, with each copy optimised for a particular and unique term. The result of this is that Your website will appear to search engines to be more relevant to a particular term which can vary. It is useful when you have a website where a decision about what to make your main key terms is not certain, such as when a company might service a large area and what to be optimised for the various locations within this area.</p>
+
+<h1>PPC PAY-PER-CLICK</h1><p>
+
+We conduct market analysis of your competition and draw a distinction between visitor and hit and buyer and see if we see a pattern.
+</p><p>
+We can track what people do after they have visited your website. Did they go on another website or do further searches such as background checks on you. We may reveal clues that customers are leaving your website to make purchases on other website lower down the Google ranking. Why? They offer something which you offer but don't mention on your website.</p>
+ 
+
+<h1>E-COMMERCE WEBSITES</h1><p>
+
+Taking payment online is called E-commerce. You may have a large product range to sell, one off items such as graphics, or may want to act as a middle-person for a company you are affiliated with and thereby allow them to handle the shipping. Either way, all but our most elaborate packages come with a content manager designed with some of the most popular and feature rich software on the internet. Once you are set up with a website you love, you need now only decide what payment gateway you use to process transactions. We will need to know your initial plans before the project starts as we could reduce costs depending on your choice. There are a number of payment gateways we recommend based on affordability, security and fair trading practices. They include;
+Pay Pal - The easiest gateway to set up with little fuss over bank details and there's no set up charge. They do however take the largest transaction fee of around 3% +20p per transaction. Highly recommended for start up on line business.
+</p><p>
+Card Save - We highly recommend this payment gateway for large volume transactions over infrequent ones. The transaction fee is the cheapest and the set up and month fee is the cheapest amongst chose who charge it.
+</p><p>
+Google Checkout - Recommended for serious small businesses, a good upgrade after PayPal but they are firm about customer identity and bank detail submission. This may seem like a lot of fuss but it protects you and the customer while cementing Google's reputation for fair transactions.
+Protx - Like Card Save only they will charge more per transaction and for set up fees, however they are a large and well established provider which carries a lot of favour with customers in our experience. (Prices correct at time of publication, 19/01/2011)
+
+</p><h1>
+TECHNOLOGY</h1><p>
+
+Our development technology is the best around, comprising over £16000 worth of registered software. As a design conscious studio we primarily use Flash. Flash is a superb technology for design work, out of the top 100 websites for design on the Internet 95% were developed in Flash (Alexa).</p><p>
+
+We also use a vast array of other popular software including PHP, Javascript and JQuery, SQL, Adobe Creative Suite, Auto CAD 7, Fireworks and Photoshop, Dreamweaver with HTML, XML, DHTML and XHTML.</p>
+
+<h1>HOSTING SERVICES</h1><p>
+
+Pop/Imap E-mail Accounts, SSH Access (Secure Shell), SSL, FTP, Stats, CGI, Ruby (RoR), Pearl, PHP, MYSQL
+</p><p>
+Front Page Extensions</p><p>
+
+2.33Ghz Linux Quad Core Dedicated Servers, Quad Core Xeon, Server Memory (RAM) 4 GB, Unlimited Bandwidth
+2x250 GB SAT (250 GB Usable Space)
+</p><p>
+CentOS, WebMin or Choose cPanel</p><p>
+
+Apache, Exim, ProFTP, MySQL, PHP, Perl & Python, Name Servers(DNS)</p><p>
+
+Windows Web Server 2008 R2, IIS 7, Mail Server, FTP Server</p><p>
+
+Microsoft FTP, MS SQL Express, ASP, ASP.net, .NET Framework</p>
+
+imseoppc.html
+<h1>
+INTERNET MARKETING, SEARCH OPTIMIZATION AND PAY PER CLICK</h1>
+<p>
+At Think Digital we believe that every single business purchase should see a return on investment.
+</p><p>
+This is the basis of our pricing structure, both fair and highly competitive.
+</p><p>
+Internet Marketing & SEO
+</p><p>
+You may be concerned about marketing your website on the web. That is using your website as an advertising tool rather than an information portal. This all comes under the heading of Internet Marketing, as does Search Engine Optimization (SEO). This basically is a method of getting your site near the top of search engines like Google.
+</p><p>
+Internet Marketing also covered the task of using paid-for advertising like Google Adwords to get people clicking on your link, so they are taken to your website. This does not actually mean that they will pay for anything, it just gets them there. There are other channels of Internet Marketing; such as being listed in much larger and busier sites and therefore standing more chance of getting people to you, some people get a Facebook page for instance. This whole system requires research; reviewing your competition and how they perform in terms of visibility in search engines and on busier sites, then seeing whether it is cost effective to compete on a certain subject or concentrate on offering something different.
+</p><p>
+Many SEO companies out there offer a FREE website review, and we are no different. You will need a website first though. We can however conduct an industry review of your competitors. SEO is an ongoing thing to adapt to changing marketing conditions but don't forget that the average conversion to a sale from a visit to a website is 1 in 100 for all types of business. Much better than Flyers door-to-door or a Telephone Book Listing, how much do you spend on that? You business type might fair better online.
+</p><p>
+All our website packages come with a standard SEO service which includes; meta-tagging of all image content, titling each page and submission to Google.
+</p><p>
+In terms of further Internet Marketing, we handle it separately from your original website, but you will need a website just to start. So let's get started.
+</p><p>
+We can monitor and report to you on the SEO activities of your competition at regular intervals.
+</p><p>
+Free consultation on your premises where you can benefit from free advice which will return you a profit based on a knowledge of how free services can land you business. Free online directories and resources might actually be better for your business and we can assess your site and tell you which
+</p><p>
+There are essentially a lot of little things that can be done to increase your visitation dramatically, such as having a Twitter page or a Google Local Buiness Search Listing. These are all thing that can be done privately with time and patience as they may not require a great deal of technical know how but when combined these small jobs can add up to a large job, you might find it better policy to outsource this task to someone like ourselves.
+</p><p>
+Also paying 100s to google when your client don't use it is non sense no ad sense. many businesses use alternative methods to Google, and we can tell you how.
+</p><h2>
+Pay Per Click or PPC</h2>
+<p>
+However many businesses use Pay Per Click to great effect, usually the one's in a highly competitive market place. Typically this mean having a Google Ad-sense account where you pay in an auction style of payment structure for each term which directs customers to your website by clicking on a premium link on a Google search results page. The pricing varies for advert placement, industry, traffic rate and ranking.
+</p><p>
+What many customers find is that the whole thing becomes very complicated very quickly and there are reports of clicking on the links of competitors by rival businesses which will send your bill sky rocketing over night. In all, a professional campaign required round the clock monitoring by experts who know the best performing techniques without trial and error.<p>
+
+content managers and training cmst.html
+
+<h1>CONTENT MANAGEMENT SYSTEMS</h1>
+<p>
+A content manager is often an open source piece of software which bolts on to an existing website that gives various but mostly limited control over the editing of the website's content to the owner with out any prior website design knowledge.
+</p><p>
+So this means that without prior technical knowledge you can log into your website through a special administration panel and amended details at regular intervals such as prices, introduction texts, blogs, picture content and video.
+</p><p>
+We usually use Open Source Content Managers, especially for Shopping Cart Websites. Some common types are Joomla and Word press. They come with templates which can be custom modified to almost any shape or form provided you have a reasonably standard format or website.
+</p><h1>
+TRAINING</h1>
+<p>
+However we have found that even this requires some training, however basic. We are confident that use of such a system can be easily taught with only one day of training.
+</p><p>
+We provide this training, usually inclusive of any price of a content manager.
+</p><p>
+A standard CMS should be as easy to modify as Facebook profile but they can be more complicated especially when a system offers SEO tagging without technical knowledge.</p>
+
+
+<main>
+
+	</div>
+	</div>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	
+	<div class="outerflex">
+<div class="clickbox-footer">
+<a href="sitemap.html">Sitemap</a><br>
+	<a href="to.html">Lead Developer</a><br>
+	<a href="web-freelancers.html">Partners</a><br>
+	<a href="web-freelancers.html">Associates</a><br>
+	<a href="web-freelancers.html">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="internal-projects.html" title="web resources">Projects</a><br>
+</div>
+<div class="clickbox-footer">
+    <a href="about-digital-agency.html">About</a><br>
+	<a href="digital-agency.html">What we do</a><br>
+	<a href="seo.html">SEO</a><br>
+	<a href="specialisms.html">Specialisms</a><br>
+	<a href="ux.html">Usability Consultancy</a><br>
+	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+</div>
+<div class="clickbox-footer">
+<a href="process.html">Process</a><br>
+	<a href="news.html">News</a><br>
+	<a href="blog-web-design.html">Blog</a><br>
+	<a href="jobs.html">Jobs</a><br>
+	<a href="services.html">Services</a><br>
+	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="faq.html" title="frequently asked questions">FAQ</a><br>
+</div>
+</div>
+	
+</footer>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-012738ae-42e1-44da-b224-94d781e53c7d"></div>
+</body>
+</html>

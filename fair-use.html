@@ -12,7 +12,6 @@ Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchest
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <style>
-
 html{
 	margin:0;
 	top:0;
@@ -20,14 +19,28 @@ html{
 	bottom:0;
 }
 body {
-	background-image:url('img/street-art-w.png');
-	background-color:rgba(000,111,89,0.2);
+	
+	background-color:rgba(225,22,0,0.9);
 	margin:0;
 	top:0;
 	font-family: 'Share Tech', sans-serif;
 }
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
 .maincont {
-	background-color:rgba(255,0,34,0.8);
+	background-color:rgba(222,222,1111,0.9);
 	padding: 25px;
 	margin: 25px;
 	color:#FFFF;
@@ -36,7 +49,7 @@ body {
 }
 .header {
     position:relative;
-	height: 480px; top:0px;
+	height: 200px; top:0px;
 	z-index:-2;
 	overflow:hidden;
 	background-color: white;
@@ -68,9 +81,8 @@ body {
 		.portfolio {
 			position: absolute;
 			left:0;
-			height: 20em;
+			height: 500px;
 			width:100%;
-
 			transition:1s ease-out;
 	
 		}
@@ -201,16 +213,16 @@ float:left;
 	width:auto;
 }
 .clip-polygon {
-  clip-path: polygon(0% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
   /* Note that percentages work as well as px */
-  height:20em;
+  height:500px;
 
   background-image:url('img/arr.png');
 			
 
             /* Create the parallax scrolling effect */
              background-attachment: fixed;
-            background-position: left;
+            background-position: center;
         
            
 }
@@ -251,6 +263,7 @@ float:left;
 	opacity: 0.8;
 	color: FFFFFF;
 	text-align:center;
+	
 	padding: 42px;
 	margin: 42px;
 	max-width: 30% !important;
@@ -280,18 +293,6 @@ float:left;
 
 }
 
-.clickbox-footer {
-	border-style: solid;
-  	border-width: 5px;
-	border-color: #000;
-	color: FFFFFF;
-	text-align:left;
-	padding: 5em;
-	margin: 5em;
-	margin-left:3em;
-	line-height:3em;
-
-}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -354,7 +355,7 @@ function openCc() {
     <div style="dispaly:table-cell;">
 CONTACTS: 
     </div>
-  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.8);padding:5px;">
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
 <a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
   </div>
   <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
@@ -395,122 +396,30 @@ CONTACTS:
 </div>
 	<div style="height:100%;width:100%;margin:0;">
 	<div class="maincont">
-
-	Think Digital operates across disciplines including Web Development, Search
-Engine Optimisation, Social Media Marketing and Training.<br></br>
-<h1 id="projects">Our Projects</h1>
-This website services as the front-end of a GitHub pages set of projects. 
-Think Digital comprises a series of projects to develop Algorithmic Trading 
-and Atifical Intelligence research through this portal.
-This will include subject such as AI, which is still hazily defined but it 
-categorized by us in two areas, MACHINE LEARNING + HUMAN SIMULATION.
-<br>
-From these two catagories come Natural Language Processing and Chat Bot experiences. 
-See how these emerging new tecthnologies can leverage the automation of 
-your organisation and build an inspirational set of wonders.
-These software development projects include the following:
-<div class="outerflex">
-<div class="clickbox">
-DIGITAL CURRENCY PROJECT
-</div>
-<div class="clickbox">
-DIGITAL SIGNING PROJECT
-</div>
-<div class="clickbox">
-ALGO TRADING PROJECT
-</div>
-</div>
-<br></br>
-This venture into AI involves Usability research as this ergonomic graming of development 
-is central to effective artifical delivery of intelligence. We therefore conduct
-detail userability research such as the following:
-<br></br>
-<div class="outerflex">
-<div class="clickbox">
-USABILITY REPORT AI
-</div>
-<div class="clickbox">
-SEO EVALUATION SAMPLE
-</div>
-<div class="clickbox">
-PPC EVALUATION SAMPLE
-</div>
-</div>
-<br></br>
-Think Digital offers a range of training services. <br>
-Drawing on over 12 year industry experience to specilise in large scale web 
-development. These developments lend themselves best to projects where SEO 
-is a priority.<br></br>
-Think Digital offers a range of training services.</br>
-Drawing on faculty level education HE level,
-Think Digital offers seminar style mentoring sessions including learning WordPress in 
-24 hours, 
-learn Front End Fundamentals in less than a week, to more complex tutorial assistance.
-<div class="outerflex">
-<div class="clickbox" id="web-dev">
-WEB DEVELOPEMENT
-</div>
-<div class="clickbox">
-SEO / PPC / SOCIAL
-</div>
-<div class="clickbox">
-TRAINING AND SEMINARS
-</div>
-</div>
-<h2>Web Development</h2>
-Outsource your Projects to use for automatic running of tedious work such as browser 
-compatibility optimisation, mass image convertion to scalable graphics and beutifying 
-code. <br></br>
-We do this with Webpack Compilers who our experts have authored books about and
- can even upgrade and migrate your 
-software to different frameworks in an automatic way in a matter of hours.
-Social Media is a lot more straight forward but can get competive, 
-especialilly if you wnat to leverage real performace. There are two sorts, 
-organic and premium. Premium permits targetted adds, organic will enhance your
- premium results dramtically and need to be organised first. Twitter , Facebook and 
- Instagram, Youtube and more. All these platform trade off each otehr and depending on
-  the competeition 
-and style of your business and industry, the approach may differ.
-<h2 id="seo-ppc">SEO</h2>
-Think Digital draws on over 11 year industry experience to specilise in large scale web development. These 
-developments lend themselves best to projects where SEO is a priority.
-Think Digital offers a range of training services.
-<h2 id="upskill-your-people">Training</h2>
-Management courses from MSc qualified instructors.
-<br></br>
-<h1 id="PORTFOLIO">Portfolio</h1>
-
-<div class="clip-polygon">
-<div class="portfolio">
-
-   <div id="kf"><img scr="img/kf.png" style="opacity:0;"></div>
-   <div id="hs"><img scr="img/hs.png" style="opacity:0;"></div>
-   <div id="es"><img scr="img/es.png" style="opacity:0;"></div>
-   <div id="cc"><img scr="img/cc.png" style="opacity:0;"></div>
-
-</div>
-</div>
-
-<div class="controls">
-<!-- Any probs with portfolio nav seems to be these buttons-->
-<span onmouseover="openKf();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openHs();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openEs();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openCc();"><div><img id="clickthru" src="img/space.png"></div></span>
-</div>
-A selection of some of our projects.
-<h1 id="contacts">Contacts</h1>
-WHERE ARE WE BASED? <br></br>
-Liverpool City Centre, UK<br>
-In the heart of the Fabric District.<br></br>
-I'd love your feedback!<br></br>
-Please use the live chat for immediate response.<br></br>
-Dont forget to leave a number or email address.<br>
-
+<main>
+<h1>Fair Use Policy</h1>
+<p>
+All our hosting services are subject to a fair use policy which reflect industry standards. Where files size are mentioned as limits; please note that these are uncommonly large.
+</p><p>
+Users may not access any website or page more than 100 times in one second, which applies to both the singular user and a number of users at one time.
+</p><p>
+Storage space is limited to no more than what is available on our servers. Where Unlimited is terms for any hosting space, we shall endeavour to enlarge our hosting space but can not guarantee this where such an act is economically indefensible. We shall prioritize pre-existing files on our server over the installation of new ones.
+</p><p>
+Where we mention offering to develop websites of a set number of pages; any price given is subject to the content being below a fair use criteria. In such a case we shall only guarantee any quote given or any available hosting space promised should the specified development fall below a computer memory size level assessed in MB; For post development projects this level will 2000 MB, for any content delivered prior to development, or during, this level shall be set to 10 000 MB. Where an e-mail account holder wishes to send electronic information such as files or data across our servers, this level shall be set to 2000 MB.
+</p><p>
+We reserve the right to bill any customer for any third-party damage or cost incurred for misuse of services. Note that misuse by anyone user on our servers may interrupt the service we offer to others. We endeavour to resolve and prevent this through means of warning messages and upload limits. Where persistent attempts are made or where warning messages are ignored, we can not be held responsible for their misuse. We may however suspend the service of any user who continually misuses our services.
+</p><p>
+Where we simply provide the hosting for any customer, we shall screen any content delivered for intrusion facilitating script, out dated script or general security flaw. We can not permit it's installation should we find any such security flaw.
+</p><p>
+We will endeavour to prevent the use of our services to any user involved in such criminal activity as fraud or identity theft. We shall likewise endeavour to prevent the use of our service to any user involved in such civil law breaches as domain name identity theft or copyright infringement.
+</p><p>
+We shall endeavour to offer an unlimited or 24 hour support or sales service where mentioned but can not guarantee the availability of our staff during unsociable hours or when our staff are busy. Please also note that staff number will be greatly reduced during unusual business hours. It is common however for our staff to work on projects through the night and may therefore likely be available. We provide e-mail support during unusual business hours and weekends and we resolve to tend to each message with in 12 hours. Much of the time, senior colleagues are not at the office or on call, we do however offer several contact telephone numbers which will forward to the first available Consultant when he or she is not in the office. We also offer a 24 hour telephone line which should be answered at all times of the day but carries with it the same restrictions mentioned above. Our staff however shall endeavour to be as helpful as possible at all times of the day or night when contacted.
+</p>
+<main>
 
 	</div>
 	</div>
-	<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
 	<div>
 	
 	<div class="outerflex">
@@ -547,11 +456,7 @@ Dont forget to leave a number or email address.<br>
 </div>
 	
 </footer>
-<!--<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-012738ae-42e1-44da-b224-94d781e53c7d"></div>-->
-<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" 
-  async defer src="//js.hs-scripts.com/7528663.js"></script>
-<!-- End of HubSpot Embed Code -->
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-012738ae-42e1-44da-b224-94d781e53c7d"></div>
 </body>
 </html>
