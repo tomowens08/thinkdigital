@@ -2,11 +2,24 @@
 body {
 
   background: white;
-  font-family: "Arial";
+  font-family: "Helvetica";
   padding:0px;
   margin:0;
   -webkit-font-smoothing: antialiased;
 
+}
+  .promotion_pane {
+    padding: 0% 0;
+    width: 100%;
+    background: #121212;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+.promotion_pane img {
+	max-width:25%;
+}
+.promotion_pane span {
+    max-width:25%;
 }
 
 a {
@@ -96,7 +109,7 @@ a:active {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-    font-size: 40px;
+    font-size: 25px;
     top: 15px;
     right: 35px;
   }
@@ -126,7 +139,7 @@ a:active {
 
 
 .sticky {
-  background-color: #202D58;
+  background-color: #fff;
   opacity: 0.97;
   top: 0px;
   border-bottom: 0px;
