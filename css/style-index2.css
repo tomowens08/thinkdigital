@@ -194,7 +194,7 @@ body {
 		}
 
 		.pointer img {
-			width: 1500px;
+			width: 100%;
 			opacity:1;
 			z-index:-1;
 		}
