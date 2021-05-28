@@ -376,6 +376,16 @@ float:left;
 .trioboxes {
 	text-align:center;
 }
+.trioboxes button {
+	padding:3.5em;
+	color:#fff;
+	background-color:#54FB95;
+	margin:3.5em;
+	border-style:line;
+	border-size:3em;
+	border-color:#303030;
+	font-size:1em;
+}
 .trioboxes BUTTON {
 	padding:3.5em;
 	color:#fff;
@@ -386,7 +396,6 @@ float:left;
 	border-color:#303030;
 	font-size:1em;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
