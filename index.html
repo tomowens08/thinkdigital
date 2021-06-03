@@ -1,352 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>
-Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchester London
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Think Digital is a New Media Web Design and Training Consultancy
-, offering SEO and related services across Liverpool and the wider UK, we have served clients in
- the USA, Europe and Austrailia.">
+<title>Think Digital Internet Software Consultancy</title>
+<meta name="description" content="Web Design and Development services with a specialism in JavaScript. 
+Training and Large Scale SEO projects.">
 <meta name="keywords" content="web, design, development, digital, online, ads, advertising">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
-	<meta charset="UTF-8">
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<style>
-
-html{
-	margin:0;
-	top:0;
-	left:0;
-	bottom:0;
-}
-body {
-	background-image:url('img/street-art-w.png');
-	background-color:rgba(000,111,89,0.2);
-	margin:0;
-	top:0;
-	font-family: 'Share Tech', sans-serif;
-}
-.maincont {
-	background-color:rgba(255,0,34,0.8);
-	padding: 25px;
-	margin: 25px;
-	color:#FFFF;
-        font-size:1.5em;
-
-}
-.header {
-    position:relative;
-	height: 480px; top:0px;
-	z-index:-2;
-	overflow:hidden;
-	background-color: white;
-}
-		.pointer {
-			position: absolute;
-			height: 100%; 
-			top:0;
-			left:0;
-			z-index:-1;
-			transition:0.5s ease-out;
-			background-image: url("img/street-art.png");
-			height: 100%;
-
-            /* Create the parallax scrolling effect */
-             background-attachment: fixed;
-            background-position: center;
-           background-repeat: no-repeat;
-            background-size: cover;
-			
-			
-		}
-
-		.pointer img {
-			width: 1500px;
-			opacity:0;
-			z-index:-1;
-		}
-		.portfolio {
-			position: absolute;
-			left:0;
-			height: 20em;
-			width:100%;
-
-			transition:1s ease-out;
-	
-		}
-		#kf{
-			width:100%;
-			height:100%;
-			top:0;
-			z-index:-4;
-			background-image:url("img/kfi.png");
-			background-attachment: fixed;
-            background-position: center;
-           background-repeat: no-repeat;
-            background-size: cover;
-			transition: 0.4s;
-		}
-		#hs{
-		    top:0;
-			width:100%;
-			height:0%;
-			z-index:-3;
-			background-image:url("img/hs.png");
-			background-attachment: fixed;
-            background-position: center;
-           background-repeat: no-repeat;
-            background-size: cover;
-			transition: 0.4s;
-		}
-		#es{
-		    top:0;
-			width:100%;
-			height:0%;
-			top:0;
-			z-index:-2;
-			background-image:url("img/esw.png");
-			background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-			transition: 0.4s;
-		}
-		#cc{
-		    top:0;
-			width:100%;
-			height:0%;
-			z-index:-1;
-			background-image:url("img/cc.png");
-			background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-			transition: 0.4s;
-		}
-		.container {
-    display: inline-block;
-    cursor: pointer;
-	right: 5px;
-	margin:1em;
-	position:fixed;
-}
-/*the nav icon style*/
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #CCC;
-    margin: 6px 0;
-	z-index: 8;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
- a {
-    text-decoration:none;
-    color:#FFF;
-    cursor:pointer;
-}
-.topbase{
-font-size:1.5em;
-margin:1.5em;
-float:left;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-	z-index:9;
-    position: fixed;
-    background-color:rgba(255,0,34,0.8);
-    top: 70px;
-    right: 0;
-    color:#FFF;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #FFF;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #FFF;
-    background-color: red;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-	padding: 8px 8px 8px 32px;
-    top:0;
-	display: block;
-	right:5px;
-}
-.logo {
-	height:100%;
-	width:auto;
-}
-.clip-polygon {
-  clip-path: polygon(0% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
-  /* Note that percentages work as well as px */
-  height:20em;
-
-  background-image:url('img/arr.png');
-			
-
-            /* Create the parallax scrolling effect */
-             background-attachment: fixed;
-            background-position: left;
-        
-           
-}
-
-.controls {
-	text-align: left;
-	z-index:999;
-}
-.controls span div {
-    display: table-cell;
-}
-
-#clickthru {
-    width: 1em;
-	height:auto;
-	opacity: 0.5;
-	cursor: pointer;
-}
-#clickthru:hover {
-	opacity: 1;
-	cursor: pointer;
-}
-.outerflex {
-	display:flex;
-	flex-wrap: wrap;
-}
-.outerbox {
-  	border-width: 5px;
-	padding: 42px;
-	margin: 42px;
-}
-
-.clickbox {
-	border-style: solid;
-  	border-width: 5px;
-	border-color: #FFF;
-	background-color:  #FF7F50;
-	opacity: 0.8;
-	color: FFFFFF;
-	text-align:center;
-	padding: 42px;
-	margin: 42px;
-	max-width: 30% !important;
-	background-image: url("img/bd-wall2.png");
-			height: 100%;
-
-            /* Create the parallax scrolling effect */
-             background-attachment: fixed;
-            background-position: center;
-           background-repeat: no-repeat;
-            background-size: cover;
-			
-
-}
-.clickbox:hover{opacity:1;transition:1s;}
-
-.clickbox-footer {
-	border-style: solid;
-  	border-width: 5px;
-	border-color: #000;
-	color: FFFFFF;
-	text-align:left;
-	padding: 5em;
-	margin: 5em;
-	margin-left:3em;
-	line-height:3em;
-
-}
-
-.clickbox-footer {
-	border-style: solid;
-  	border-width: 5px;
-	border-color: #000;
-	color: FFFFFF;
-	text-align:left;
-	padding: 5em;
-	margin: 5em;
-	margin-left:3em;
-	line-height:3em;
-
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-<script>
-		
-function myFunction(x) {
-    x.classList.toggle("change");
-    
-}
-function openNav() {
-document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
-    document.getElementById("mySidenav").style.width = "17em";
-    document.getElementById("main").style.marginRight = "17em";
-    document.body.style.backgroundColor = "rgba(255,255,255,0)";
-
-}
-
-function closeNav() {
-document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
-    	document.getElementById("mySidenav").style.width = "0";
-    	document.getElementById("main").style.marginRight= "0";
-    	document.body.style.backgroundColor = "white";
-    
-}
-function openKf() {
-	document.getElementById("kf").style.height = "100%";
-	document.getElementById("hs").style.height = "0%";
-	document.getElementById("es").style.height = "0%";
-	document.getElementById("cc").style.height = "0%";
-}
-function openHs() {
-	document.getElementById("kf").style.height = "0%";
-	document.getElementById("hs").style.height = "100%";
-	document.getElementById("es").style.height = "0%";
-	document.getElementById("cc").style.height = "0%";
-}
-function openEs() {
-	document.getElementById("kf").style.height = "0%";
-	document.getElementById("hs").style.height = "0%";
-	document.getElementById("es").style.height = "100%";
-	document.getElementById("cc").style.height = "0%";
-}
-function openCc() {
-	document.getElementById("kf").style.height = "0%";
-	document.getElementById("hs").style.height = "0%";
-	document.getElementById("es").style.height = "0%";
-	document.getElementById("cc").style.height = "100%";
-}
-</script>
+<link rel="stylesheet" href="css/style-index2.css">
+<script src="js/script.js"></script>
 </head>
+
 <body>
+
 <div>
    <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
   <table><tr><td>
@@ -356,18 +23,18 @@ function openCc() {
     <div style="dispaly:table-cell;">
 CONTACTS: 
     </div>
-  <div style="dispaly:table-cell;background-color:rgb(222,160,221,0.9);padding:5px;">
-<a href="tel:01513140457" style="color:#FFFFFF;">0151 314 0457</a>&nbsp&nbsp|&nbsp
-<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  <div style="dispaly:table-cell;background-color:rgb(124,252,0,0.9);padding:5px;">
+<a href="tel:07898948203" style="color:#FFFFFF;">0151 314 0457</a>&nbsp&nbsp|&nbsp
+<a href="tel:07898948203" style="color:#FFFFFF;">07 89 89 48 203</a>
   </div>
-  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
-<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  <div style="dispaly:table-cell;background-color:rgb(0,0,128,0.2);padding:5px;">
+<a href="mailto:tomowens.contact@gmail.com" style="color:#FFFFFF;">info@think--digital.co.uk</a>
   </div>
   </div>
 </td></tr>
 </table>
   </div>
-  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+   <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -378,150 +45,268 @@ CONTACTS:
   <a href="index.html" title="Home">Home</a>
   <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
   <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
-  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
   <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
-  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
-  <a href="about-digital-agency.html" title="Home">About</a>
   <a href="web-properties.html" title="WEB DEV">Web Property</a>
   <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
   <a href="training-index.html" title="Training">Training</a>
 
 </div>
-</div>
+
 <div style="text-align:center;z-index:1;">
 
 <div class="header" style="top:0px;left:0px;right:0px;width:100%;">
-<img src="img/TDh1.png" class="logo">
+<img src="img/tdh2-2.png" class="logo">
 
 	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
 </div>
 </div>
-	<div style="height:100%;width:100%;margin:0;">
-	<div class="maincont">
+  
+  <div class="maincont" style="background-color:rgba(3, 10, 35,0.8);color:white;">
+<p>Operating across multiple disciplines including Web Development, Search Engine Optimisation, 
+  Social Media Marketing and Training.</p>
 
-	Think Digital operates across multiple disciplines including Web Development, Search
-Engine Optimisation, Social Media Marketing and Training.<br></br>
-<h1 id="projects">Our Projects</h1>
-This website services as the front-end of a GitHub pages and associated set of projects. 
-Think Digital will also head the deveopment of a series of projects in software development, 
-both web-based and 
-desktop through this GitHub pages portal.
-This will include areas of interest such as artificla intelligence, specifically regarding on-page 
-chatbot experiences, digital signature services and even algorithmic trading products.
+<h2>Projects</h2>
+
+<p>This website services as the front-end of a GitHub pages account and associated set of projects. 
+Think Digital will also lead the deveopment of a series of projects in software development, 
+both web-based and desktop through this GitHub pages portal.</p>
+<p>This includes areas of interest.</p>
 <br> 
-See how these emerging new tecthnologies can leverage the automation of 
-your organisation and build an inspirational user experiences. Below are a set of text boxes which will
-link to further deatils pages on the corresponding projects.
-<div class="outerflex">
-<div class="clickbox">
-<a href="internal-projects.html">AI CHAT BOT PROJECT</a>
+<p>See how these emerging new tecthnologies can leverage the automation of 
+your organisation and build an inspirational user experiences. </p>
+
+
+
+<div class="trioboxes">
+
+<BUTTON><a href="internal-projects.html">IMAGINATION</a></BUTTON>
+
+<BUTTON><a href="internal-projects.html">CREATION</a></BUTTON>
+
+<BUTTON><a href="internal-projects.html">FRUITION</a></BUTTON>
+
 </div>
-<div class="clickbox">
-<a href="internal-projects.html">DIGITAL SIGNATURE PROJECT</a>
-</div>
-<div class="clickbox">
-<a href="internal-projects.html">ALGO TRADING PROJECT</a>
-</div>
-</div>
+
+
 <br></br>
-Some other realated research also undertaken by Think Digital, this includes both usability and 
-search engine optimisation.
-We conduct detailed primary research such as the following:
+<p>There are also other related areas of interest undertaken by Think Digital. 
+This includes both usability and search engine optimisation primary research.</p>
+<p>On offer are primary research samples in the areas of Usability, SEO (Search Engine Optimisation) and 
+PPC (Pay-Per-Click Advertising) to assist with consultation:</p>
 <br></br>
-<div class="outerflex">
-<div class="clickbox">
-<a href="ux.html">USABILITY REPORT AI</a>
+
+<div class="trioboxes">
+
+<button>
+<a href="ux.html">USABLE</a>
+</button>
+
+<button>
+<a href="seo.html">OPTIMAL</a>
+</button>
+
+<button>
+<a href="ppc.html">GET SERIOUS</a>
+</button>
+
 </div>
-<div class="clickbox">
-<a href="seo.html">SEO EVALUATION SAMPLE</a>
-</div>
-<div class="clickbox">
-<a href="ppc.html">PPC EVALUATION SAMPLE</a>
-</div>
-</div>
+
 <br></br>
-In addition, Think Digital offers a range of training services. <br>
-Drawing on over 12 year industry experience to specilise in large scale web 
-development. These developments lend themselves best to projects where SEO 
-is a priority.<br></br>
-Drawing on faculty level education at HE level,
-Think Digital offers seminar style mentoring sessions including learning WordPress in 
-24 hours, Front-End Fundamentals in less than a week, to more complex tutorial assistance.
-See the following links for further information on each subject area:
-<div class="outerflex">
-<div class="clickbox" id="web-dev">
-<a href="webdev.html">WEB DEVELOPEMENT</a>
-</div>
-<div class="clickbox">
-<a href="online-marketing.html">SEO / PPC / SOCIAL</a>
-</div>
-<div class="clickbox">
-<a href="training-index.html">TRAINING AND SEMINARS</a>
-</div>
-</div>
-<h2>Web Development</h2>
-This area of concern is the primary remit of our services. Its something which we have built up 
-a great deal of professional expertise in a variety of specialisms such as 
-e-commerce and complex interactivity projects.<br>
-See our <a href="specialisms.html">specialisms</a> page to see how we have built up a level of expertise 
-which would be difficult to replicate
-by firms who have noot worked in this area, such as with highly regulated or technically complex trades.<br>
-Outsource your Projects to use for automated work such as browser 
-compatibility optimisation, mass image convertion to scalable graphics and beautifying 
-code. <br></br>
-We do this with Webpack Compilers and can even upgrade and migrate your 
-software to different frameworks in an automatic way in a matter of hours.
-Social Media is a lot more straight forward but can get competive, 
-especialilly if you wnat to leverage real performace. There are two sorts, 
-organic and premium. Premium permits targetted adds, organic will enhance your
- premium results dramtically and need to be organised first. Twitter, Facebook and 
- Instagram, Youtube and more. All these platform trade off each otehr and depending on
- your competeition 
-, style of your business and industry, the approach may differ.
-<h2 id="seo-ppc">SEO</h2>
-Think Digital draws on over 12 year industry experience to specilise in large scale web development. These 
-developments lend themselves best to projects where SEO is a priority.
-Think Digital offers a range of training services.
 <h2 id="upskill-your-people">Training</h2>
-Management courses from MSc qualified instructors. The lead developer at Think Digital is an author and
-expereinced educator. We can offer tutoring in areas such as Cyber Security and Project Managment.
-See the following pages for more information:
+<p>Think Digital offers a range of training services. <br>
+Drawing on over 13 year industry experience and faculty level lecturer experience at HE level,
+Think Digital offers seminar style mentoring sessions including learning WordPress in 
+24 hours, Front-End Fundamentals in less than a week, to more complex tutorial assistance. 
+This is all overseen by Masters qualified professional instructors.</p>
+<p>The lead developer at Think Digital is lead by an author and
+expereinced educator. We can offer tutoring in areas such as Coding, Cyber Security and Project Managment.</p>
+<p>See the following pages for more information:</p>
 <a href="training-index.html">Training Services</a>
 <br></br>
+<p>See the following links for further information on each subject area:</p>
+
+<div class="trioboxes">
+<button>
+<a href="webdev.html">DEVELOP</a>
+</button>
+<button>
+<a href="online-marketing.html">MARKET</a>
+</button>
+<button>
+<a href="training-index.html">UPSKILL</a>
+</button>
+</div>
+
+<h2 id="#webdev">Web Development</h2>
+<p>Working with people from broad backgrounds over many years of trading means having 
+a seasoned understanding of the needs of the client.</p>
+
+<p>We believe you demand an elegant, feature rich user experiences to grow and strengthen your brand, 
+and convert traffic into lasting partnerships while preserving your professional credo.</p>
+
+<p>This is remit of our services. Its something which we have built up 
+a great deal of expertise in along with a variety of specialisms such as 
+e-commerce, complex interactivity projects, and projects within highly regulated or technically complex industries.</p><br>
+<p>See our <a href="specialisms.html">specialisms</a> page to see how we have built up a level of expertise 
+which would be difficult to find elsewhere</p>
+<br>
+</br>
+
+<h2 id="seo-ppc">SEO</h2>
+<p>Think Digital draws on over 13 year industry experience to specilise in large scale web development. These 
+developments lend themselves best to projects where SEO is a priority.
+Think Digital offers a range of training services.</p><p>
+The nature of organic search requires effective strategy to overcome challenges and leverage opportunity. 
+Search consultanty involves competition analysis and provable approaches in an ever changing environment.
+</p><p>
+Keeping abreast of industry updates and implementing innovative strategies in reaching your goals is something
+ that requires proceedural excellence if you wish to succeed and is something in which we can considerable experience.</p>
+
+
+
+
 <h1 id="PORTFOLIO">Portfolio</h1>
 
-<div class="clip-polygon">
-<div class="portfolio">
+ </div>
+<!-- end maincont -->
 
-   <div id="kf"><img alt="diagram and imagery for digital" src="img/kf.png" style="opacity:0;"></div>
-   <div id="hs"><img alt="diagram and imagery for digital" src="img/hs.png" style="opacity:0;"></div>
-   <div id="es"><img alt="diagram and imagery for digital" src="img/es.png" style="opacity:0;"></div>
-   <div id="cc"><img alt="diagram and imagery for digital" src="img/cc.png" style="opacity:0;"></div>
 
+
+
+<div class="row" style="max-height:240px;overflow-y:hidden;background-color:#000;">
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/el.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/es.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/cc.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  
 </div>
+
+<div class="row" style="max-height:240px;overflow-y:hidden;">
+  
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/en.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/hs.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column" style="overflow:hidden;height:500px;">
+    <img src="img/kf.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
 </div>
 
-<div class="controls">
-<!-- Any probs with portfolio nav seems to be these buttons-->
-<span onmouseover="openKf();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openHs();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openEs();"><div><img id="clickthru" src="img/space.png"></div></span>
-<span onmouseover="openCc();"><div><img id="clickthru" src="img/space.png"></div></span>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides"  style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">1 / 6</div>
+      <img src="img/el.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides"  style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/es.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides" style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/cc.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides" style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">4 / 6</div>
+      <img src="img/en.jpeg" style="width:100%">
+    </div>
+	
+	<div class="mySlides" style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">5 / 6</div>
+      <img src="img/hs.jpeg" style="width:100%">
+    </div>
+	
+	<div class="mySlides" style="overflow:scroll;overflow-x:hidden;height:500px;">
+      <div class="numbertext">6 / 6</div>
+      <img src="img/kf.jpeg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column"  style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/el.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Elas Employment Law - Scroll to View">
+    </div>
+    <div class="column" style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/es.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Employer Safe Web Application - Scroll to View">
+    </div>
+    <div class="column" style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/cc.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Cambria Chambers Barristers at Law - Scroll to View">
+    </div>
+	<div class="column" style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/en.jpeg" style="width:100%" onclick="currentSlide(4)" alt="E-Sign Digital Signature Software - Scroll to View">
+    </div>
+	<div class="column" style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/hs.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Hotter The UKs Largest Shoe Retailer - Scroll to View">
+    </div>
+	<div class="column" style="overflow:hidden;height:150px;">
+      <img class="demo cursor" src="img/kf.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Keenofit Telemedicine Techology by UPLEC - Scroll to View">
+    </div>
+  </div>
 </div>
-A selection of some of our projects.
-<h1 id="contacts">Contacts</h1>
-WHERE ARE WE BASED? <br></br>
-Liverpool City Centre, UK<br>
-In the heart of the Fabric District.<br></br>
-I'd love your feedback!<br></br>
-Please use the live chat for immediate response.<br></br>
-Dont forget to leave a number or email address.<br>
 
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("myModal").style.top = "0";
+  document.getElementById("myModal").style.transition = "1s";
+}
 
-	</div>
-	</div>
-	<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
-	<div>
+function closeModal() {
+  document.getElementById("myModal").style.top = "-1000px";
+  document.getElementById("myModal").style.transition = "1s";
+  //document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+
 	
 	<div class="outerflex">
 <div class="clickbox-footer">
@@ -551,24 +336,18 @@ Dont forget to leave a number or email address.<br>
 	<a href="jobs.html">Jobs</a><br>
 	<a href="services.html">Services</a><br>
 	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
-    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Websites</a><br>
     <a href="faq.html" title="frequently asked questions">FAQ</a><br>
 </div>
 </div>
 <div style="text-align:center;">
-<img src="social/f.png" alt="link to us on social media" style="height:2.5em;width:auto;">
-<img src="social/in.png" alt="link to us on social media" style="height:2.5em;width:auto;">
-<img src="social/g.png" alt="link to us on social media" style="height:2.5em;width:auto;">
-<img src="social/t.png" alt="link to us on social media" style="height:2.5em;width:auto;">
+<a href="https://www.linkedin.com/in/tom-o-26038928">
+<img src="social/in.png" alt="link to us on social media" style="height:4em;width:auto;">
+</a>
 <br></br>
 	<p>THINK DIGITAL CONSULTACY LTD | Company number: 11452723</p>
 	<br></br>
 </div>
-</footer>
-<!--<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7528663.js"></script>
--->
-<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7528663.js"></script>
-<!-- End of HubSpot Embed Code -->
+</footer> 
 </body>
 </html>
