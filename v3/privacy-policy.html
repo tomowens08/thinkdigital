@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchester London
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	
+	background-color:rgba(225,22,0,0.9);
+	margin:0;
+	top:0;
+	font-family: 'Share Tech', sans-serif;
+}
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
+.maincont {
+	background-color:rgba(222,222,1111,0.9);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
+
+}
+.header {
+    position:relative;
+	height: 200px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
+}
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
+
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
+    display: inline-block;
+    cursor: pointer;
+	right: 5px;
+	margin:1em;
+	position:fixed;
+}
+/*the nav icon style*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CCC;
+    margin: 6px 0;
+	z-index: 8;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
+}
+.topbase{
+font-size:1.5em;
+margin:1.5em;
+float:left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+	z-index:9;
+    position: fixed;
+    background-color:rgba(255,0,34,0.8);
+    top: 70px;
+    right: 0;
+    color:#FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    background-color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	padding: 8px 8px 8px 32px;
+    top:0;
+	display: block;
+	right:5px;
+}
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
+
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
+}
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
+.clickbox {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
+	color: FFFFFF;
+	text-align:center;
+	
+	padding: 42px;
+	margin: 42px;
+	max-width: 30% !important;
+	background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+
+}
+.clickbox:hover{opacity:1;transition:1s;}
+
+.clickbox-footer {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #000;
+	color: FFFFFF;
+	text-align:left;
+	padding: 5em;
+	margin: 5em;
+	margin-left:3em;
+	line-height:3em;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+		
+function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+function openNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+    document.getElementById("mySidenav").style.width = "17em";
+    document.getElementById("main").style.marginRight = "17em";
+    document.body.style.backgroundColor = "rgba(255,255,255,0)";
+
+}
+
+function closeNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginRight= "0";
+    	document.body.style.backgroundColor = "white";
+    
+}
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
+</script>
+</head>
+<body>
+<div>
+   <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
+  <table><tr><td>
+<img src="img/mobile2.png" style="height:60px;width:auto;">
+  </div></td><td>
+  <div style="dispaly:table-column;">
+    <div style="dispaly:table-cell;">
+CONTACTS: 
+    </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
+<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  </div>
+  </div>
+</td></tr>
+</table>
+  </div>
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" title="Home">Home</a>
+  <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
+  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
+  <a href="about-digital-agency.html" title="Home">About</a>
+  <a href="web-properties.html" title="WEB DEV">Web Property</a>
+  <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
+  <a href="training-index.html" title="Training">Training</a>
+
+</div>
+</div>
+<div style="text-align:center;z-index:1;">
+
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
+
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
+</div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
+<main>
+<h1>Privacy Policy</h1>
+<p>
+Think Digital regards the lawful and correct treatment of personal information important to maintaining confidence between those with whom we deal and ourselves.
+</p><p>
+Think Digital treats personal information lawfully and correctly. To this end Think Digital fully endorses and adheres to the principles of data protection, as set out in the Data Protection Act 1998 and GDPR.
+</p><p>
+Specifically, the personal information:
+</p><p>
+* shall be processed fairly and lawfully</p><p>
+* shall be obtained only for one or more specified and lawful purposes</p><p>
+* shall be adequate, relevant and not excessive</p><p>
+* shall be accurate and, where necessary, kept up to date;</p><p>
+* shall not be kept longer than is necessary</p><p>
+* shall be processed in accordance with the rights of data subjects under the Act</p><p>
+* shall be kept secure</p><p>
+* not transferred to countries without adequate protection</p><p>
+
+
+Personal data is only collected through the Think Digital website for the purpose of processing orders and answering queries. Think Digital website does not store or capture personal information, but merely logs the user's IP address (Internet Protocol: standard allowing data to be transmitted between two devices) which is automatically recognised by the web-server.
+</p><p>
+Think Digital website uses cookies for collecting user information from the site and does not collect any information about you except that required for system administration of the website.
+</p><p>
+Further information regarding the Data Protection Act can be found on the Government's website.
+</p>
+<main>
+
+	</div>
+	</div>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	
+	<div class="outerflex">
+<div class="clickbox-footer">
+<a href="sitemap.html">Sitemap</a><br>
+	<a href="to.html">Lead Developer</a><br>
+	<a href="web-freelancers.html">Partners</a><br>
+	<a href="web-freelancers.html">Associates</a><br>
+	<a href="web-freelancers.html">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="internal-projects.html" title="web resources">Projects</a><br>
+</div>
+<div class="clickbox-footer">
+    <a href="about-digital-agency.html">About</a><br>
+	<a href="digital-agency.html">What we do</a><br>
+	<a href="seo.html">SEO</a><br>
+	<a href="specialisms.html">Specialisms</a><br>
+	<a href="ux.html">Usability Consultancy</a><br>
+	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+</div>
+<div class="clickbox-footer">
+<a href="process.html">Process</a><br>
+	<a href="news.html">News</a><br>
+	<a href="blog-web-design.html">Blog</a><br>
+	<a href="jobs.html">Jobs</a><br>
+	<a href="services.html">Services</a><br>
+	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="faq.html" title="frequently asked questions">FAQ</a><br>
+</div>
+</div>
+	
+</footer>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7528663.js"></script>
+
+</body>
+</html>

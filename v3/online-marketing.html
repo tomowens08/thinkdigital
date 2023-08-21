@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Think Digital Consultancy - Online Marketing Liverpool Manchester London Palo Alto Austrailia
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	
+	background-color:rgba(225,22,0,0.9);
+	margin:0;
+	top:0;
+	font-family: 'Share Tech', sans-serif;
+}
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
+.maincont {
+	background-color:rgba(222,222,1111,0.9);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
+
+}
+.header {
+    position:relative;
+	height: 200px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
+}
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
+
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
+    display: inline-block;
+    cursor: pointer;
+	right: 5px;
+	margin:1em;
+	position:fixed;
+}
+/*the nav icon style*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CCC;
+    margin: 6px 0;
+	z-index: 8;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
+}
+.topbase{
+font-size:1.5em;
+margin:1.5em;
+float:left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+	z-index:9;
+    position: fixed;
+    background-color:rgba(255,0,34,0.8);
+    top: 70px;
+    right: 0;
+    color:#FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    background-color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	padding: 8px 8px 8px 32px;
+    top:0;
+	display: block;
+	right:5px;
+}
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
+
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
+}
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
+.clickbox {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
+	color: FFFFFF;
+	text-align:center;
+	
+	padding: 42px;
+	margin: 42px;
+	max-width: 30% !important;
+	background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+
+}
+.clickbox:hover{opacity:1;transition:1s;}
+
+.clickbox-footer {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #000;
+	color: FFFFFF;
+	text-align:left;
+	padding: 5em;
+	margin: 5em;
+	margin-left:3em;
+	line-height:3em;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+		
+function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+function openNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+    document.getElementById("mySidenav").style.width = "17em";
+    document.getElementById("main").style.marginRight = "17em";
+    document.body.style.backgroundColor = "rgba(255,255,255,0)";
+
+}
+
+function closeNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginRight= "0";
+    	document.body.style.backgroundColor = "white";
+    
+}
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
+</script>
+</head>
+<body>
+<div>
+   <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
+  <table><tr><td>
+<img src="img/mobile2.png" style="height:60px;width:auto;">
+  </div></td><td>
+  <div style="dispaly:table-column;">
+    <div style="dispaly:table-cell;">
+CONTACTS: 
+    </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
+<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  </div>
+  </div>
+</td></tr>
+</table>
+  </div>
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" title="Home">Home</a>
+  <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
+  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
+  <a href="about-digital-agency.html" title="Home">About</a>
+  <a href="web-properties.html" title="WEB DEV">Web Property</a>
+  <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
+  <a href="training-index.html" title="Training">Training</a>
+
+</div>
+</div>
+<div style="text-align:center;z-index:1;">
+
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
+
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
+</div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
+<main>
+<h1>About SEO</h1>
+<p>
+Search engine optimization (SEO), a subset of search engine marketing, is the process of improving the volume and quality of traffic to a web site from search engines via "natural" ("organic" or "algorithmic") search results. SEO can also target specialized searches such as image search, local search, and industry-specific vertical search engines.
+</p><p>
+SEO is marketing by understanding how search algorithms work and what human visitors might search for, to help match those visitors with sites offering what they are interested in finding. Some SEO efforts may involve optimizing a site's coding, presentation, and structure, without making very noticeable changes to human visitors, such as incorporating a clear hierarchical structure to a site, and avoiding or fixing problems that might keep search engine indexing programs from fully spidering a site. Other, more noticeable efforts, involve including unique content on pages that can be easily indexed and extracted from those pages by search engines while also appealing to human visitors.
+</p><p>
+The term SEO can also refer to "search engine optimizers," a term adopted by an industry of consultants who carry out optimization projects on behalf of clients, and by employees of site owners who may perform SEO services in-house. Search engine optimizers often offer SEO as a stand-alone service or as a part of a larger marketing campaign. Because effective SEO can require making changes to the source code of a site, it is often very helpful when incorporated into the initial development and design of a site, leading to the use of the term "Search Engine Friendly" to describe designs, menus, content management systems and shopping carts that can be optimized easily and effectively.
+</p><p>
+In Internet marketing, search engine marketing, or SEM, is a set of marketing methods to increase the visibility of a website in search engine results pages (SERPs). SEM strategies include:
+</p><p>
+Search engine optimization attempts to improve rankings for relevant keywords in search results by improving a web site's structure, content, and relevant back link count.
+</p><p>
+Pay per click advertising uses sponsored search engine listings to drive traffic to a web site. The advertiser bids for search terms, and the search engine ranks ads based on a competitive auction as well as other factors.
+</p><p>
+Paid inclusion feeds listings into search engines, typically comparative shopping sites like Nextag.
+</p><p>
+Social media optimization promotes by placing ideas within online communities with the hope that they will spread virally. Check out: revillin.com
+</p><p>
+Video Search Marketing attempts to promote a business by strategically placing short video clips on websites such as YouTube to be picked up search engine spiders or promoted through internal rating systems.
+</p><p>
+Vertical search, part of a larger sub-grouping known as “specialized” search, is a relatively new tier in the Internet search industry consisting of search engines that focus on specific businesses. While Google, Yahoo!, and the like will continue to dominate the online consumer search market, research analysts say myriad specialized search engines are emerging to address the particular information needs of niche audiences and professions.
+</p><p>
+A web crawler (also known as a Web spider or Web robot) is a program or automated script which browses the World Wide Web in a methodical, automated manner. Other less frequently used names for Web crawlers are ants, automatic indexers, bots, and worms (Kobayashi and Takeda, 2000).
+</p><p>
+This process is called Web crawling or spidering. Many sites, in particular search engines, use spidering as a means of providing up-to-date data. Web crawlers are mainly used to create a copy of all the visited pages for later processing by a search engine, that will index the downloaded pages to provide fast searches. Crawlers can also be used for automating maintenance tasks on a Web site, such as checking links or validating HTML code. Also, crawlers can be used to gather specific types of information from Web pages, such as harvesting e-mail addresses (usually for spam).
+</p><p>
+A Web crawler is one type of bot, or software agent. In general, it starts with a list of URLs to visit, called the seeds. As the crawler visits these URLs, it identifies all the hyperlinks in the page and adds them to the list of URLs to visit, called the crawl frontier. URLs from the frontier are recursively visited according to a set of policies
+</p><p>
+Webmasters and content providers began optimizing sites for search engines in the mid-1990s, as the first search engines were cataloguing the early Web.
+</p><p>
+Initially, all a webmaster needed to do was submit a page, or URL, to the various engines which would send a spider to "crawl" that page, extract links to other pages from it, and return information found on the page to be indexed.[1] The process involves a search engine spider downloading a page and storing it on the search engine's own server, where a second program, known as an indexer, extracts various information about the page, such as the words it contains and where these are located, as well as any weight for specific words, as well as any and all links the page contains, which are then placed into a scheduler for crawling at a later date.
+</p><p>
+Site owners started to recognize the value of having their sites highly ranked and visible in search engine results, creating an opportunity for both "white hat" and "black hat" SEO practitioners. Indeed, by 1996, email spam could be found on Usenet touting SEO services.[2] The earliest known use of the phrase "search engine optimization" was a spam message posted on Usenet on July 26, 1997.[3]
+</p><p>
+Early versions of search algorithms relied on webmaster-provided information such as the keyword meta tag, or index files in engines like ALIWEB. Meta-tags provided a guide to each page's content. But indexing pages based upon meta data was found to be less than reliable, because some webmasters abused meta tags by including irrelevant keywords to artificially increase page impressions for their website and to increase their ad revenue. Cost per thousand impressions was at the time the common means of monetizing content websites. Inaccurate, incomplete, and inconsistent meta data in meta tags caused pages to rank for irrelevant searches, and fail to rank for relevant searches.[4] Web content providers also manipulated a number of attributes within the HTML source of a page in an attempt to rank well in search engines.[5]
+</p><p>
+By relying so much upon factors exclusively within a webmaster's control, early search engines suffered from abuse and ranking manipulation. To provide better results to their users, search engines had to adapt to ensure their results pages showed the most relevant search results, rather than unrelated pages stuffed with numerous keywords by unscrupulous webmasters. Search engines responded by developing more complex ranking algorithms, taking into account additional factors that were more difficult for webmasters to manipulate.
+</p>
+
+<h2>Second stage: Link analysis</h2>
+<p>
+Larry Page and Sergei Brin, while graduate students at Stanford University, developed a search engine called "backrub" that relied on a mathematical algorithm to rate the prominence of web pages. The number calculated by the algorithm is called PageRank, and is based upon the quantity and prominence of incoming links.[6] PageRank estimates the likelihood that a given page will be reached by a web user who randomly surfs the web, and follows links from one page to another. In effect, this means that some links are stronger than others, as a higher PageRank page is more likely to be reached by the random surfer.
+</p><p>
+Page and Brin founded Google in 1998. On strong word of mouth from programmers, Google became a popular search engine. Off-page factors such as PageRank and hyperlink analysis were considered, as well as on-page factors, to enable Google to avoid the kind of manipulation seen in search engines focusing primarily upon on-page factors for their rankings. Although PageRank was more difficult to game, webmasters had already developed link building tools and schemes to influence the Inktomi search engine, and these methods proved similarly applicable to gaining PageRank. Many sites focused on exchanging, buying, and selling links, often on a massive scale. Some of these schemes, or link farms, involved the creation of thousands of sites for the sole purpose of link spamming.[7]
+</p>
+<h2>Current technology: Search engines consider many signals</h2>
+<p>
+To reduce the impact of link schemes, search engines have developed a wider range of undisclosed off-site factors they use in their algorithms. As a search engine may use hundreds of factors in ranking the listings on its SERPs, the factors themselves and the weight each carries can change continually, and algorithms can differ widely. The four leading search engines, Google, Yahoo, Microsoft and Ask.com, do not disclose the algorithms they use to rank pages. Some SEOs have carried out controlled experiments to gauge the effects of different approaches to search optimization, and share results through online forums and blogs.[8] SEO practitioners may also study patents held by various search engines to gain insight into the algorithms.[9]
+</p>
+<h2>Optimizing for traffic quality</h2>
+<p>
+In addition to seeking better rankings, search engine optimization is also concerned with traffic quality. Traffic quality is measured by how often a visitor using a specific keyword phrase leads to a desired conversion action, such as making a purchase, viewing or downloading a certain page, requesting further information, signing up for a newsletter, or taking some other specific action.
+</p><p>
+By improving the quality of a page's search listings, more searchers may select that page, and those searchers may be more likely to convert. Examples of SEO tactics to improve traffic quality include writing attention-grabbing titles, adding accurate meta descriptions, and choosing a domain and URL that improve the site's branding.
+</p>
+<h2>Relationship between SEO and search engines</h2>
+<p>
+By 1997 search engines recognized that some webmasters were making efforts to rank well in their search engines, and even manipulating the page rankings in search results. In some early search engines, such as Infoseek, ranking first was as easy as grabbing the source code of the top-ranked page, placing it on your website, and submitting a URL to instantly index and rank that page.[citation needed]
+</p><p>
+Due to the high value and targeting of search results, there is potential for an adversarial relationship between search engines and SEOs. In 2005, an annual conference named AirWeb[10] was created to discuss bridging the gap and minimizing the sometimes damaging effects of aggressive web content providers.
+</p><p>
+Some more aggressive site owners and SEOs generate automated sites or employ techniques that eventually get domains banned from the search engines. Many search engine optimization companies, which sell services, employ long-term, low-risk strategies, and most SEO firms that do employ high-risk strategies do so on their own affiliate, lead-generation, or content sites, instead of risking client websites.
+</p><p>
+Some SEO companies employ aggressive techniques that get their client websites banned from the search results. The Wall Street Journal profiled a company, Traffic Power, that allegedly used high-risk techniques and failed to disclose those risks to its clients.[11] Wired reported the same company sued a blogger for mentioning that they were banned.[12] Google's Matt Cutts later confirmed that Google did in fact ban Traffic Power and some of its clients.[13]
+</p><p>
+Some search engines have also reached out to the SEO industry, and are frequent sponsors and guests at SEO conferences and seminars. In fact, with the advent of paid inclusion, some search engines now have a vested interest in the health of the optimization community. All of the main search engines provide information/guidelines to help with site optimization: Google's, Yahoo!'s, MSN's and Ask.com's. Google has a Sitemaps program[14] to help webmasters learn if Google is having any problems indexing their website and also provides data on Google traffic to the website. Yahoo! has Site Explorer that provides a way to submit your URLs for free (like MSN/Google), determine how many pages are in the Yahoo! index and drill down on inlinks to deep pages. Yahoo! has an Ambassador Program[15] and Google has a program for qualifying Google Advertising Professionals.[16]
+
+<h3>Getting into search engines' databases</h3>
+<p>
+As of 2007 the leading contextual search engines do not require submission. They discover new sites and pages automatically. Google and Yahoo offer submission programs, such as Google Sitemaps, for which an XML type feed can be created and submitted. These programs are designed to assist sites that may have pages that aren't discoverable by automatically following links.[17]
+</p><p>
+Search engine crawlers may look at a number of different factors when crawling a site, and many pages from a site may not be indexed by the search engines until they gain more PageRank, links or traffic. Distance of pages from the root directory of a site may also be a factor in whether or not pages get crawled, as well as other importance metrics. Cho et al.[18] described some standards for those decisions as to which pages are visited and sent by a crawler to be included in a search engine's index.
+</p><p>
+Some search engines, notably Yahoo!, operate a paid submission service that guarantee crawling for either a set fee or cost per click. Such programs usually guarantee inclusion in the database, but do not guarantee specific ranking within the search results.
+</p>
+ 
+
+<h3>Preventing search indexing</h3>
+
+Main article: robots.txt
+</p><p>
+To avoid undesirable search listings, webmasters can instruct spiders not to crawl certain files or directories through the standard robots.txt file in the root directory of the domain. Additionally, a page can be explicitly excluded from a search engine's database by using a meta tag specific to robots. When a search engine visits a site, the robots.txt located in the root directory is the first file crawled. The robots.txt file is then parsed, and will instruct the robot as to which pages are not to be crawled. As a search engine crawler may keep a cached copy of this file, it may on occasion crawl pages a webmaster does not wish crawled.
+</p><p>
+Pages typically prevented from being crawled include login specific pages such as shopping carts and user-specific content such as search results from internal searches.
+</p>
+<img src="img/microsite-diagram.png" style="width:100%;height:auto;" alt=""/>
+<h2>Types of SEO</h2>
+<p>
+SEO techniques are classified by some into two broad categories: techniques that search engines recommend as part of good design, and those techniques that search engines do not approve of and attempt to minimize the effect of, referred to as spamdexing. Professional SEO consultants do not offer spamming and spamdexing techniques amongst the services that they provide to clients. Some industry commentators classify these methods, and the practitioners who utilize them, as either "white hat SEO", or "black hat SEO".[19] Many SEO consultants reject the black and white hat dichotomy as a convenient but unfortunate and misleading over-simplification that makes the industry look bad as a whole.
+</p>
+<h2>"White hat"</h2>
+<p>
+An SEO tactic, technique or method is considered "White hat" if it conforms to the search engines' guidelines and/or involves no deception. As the search engine guidelines[20][21][22][23][24] are not written as a series of rules or commandments, this is an important distinction to note. White Hat SEO is not just about following guidelines, but is about ensuring that the content a search engine indexes and subsequently ranks is the same content a user will see.
+</p><p>
+White Hat advice is generally summed up as creating content for users, not for search engines, and then make that content easily accessible to their spiders, rather than game the system. White hat SEO is in many ways similar to web development that promotes accessibility,[25] although the two are not identical.
+</p>
+<h2>Repeat Customers</h2> <p>
+When targeting repeat customers, you want your PPC strategy to acknowledge that the consumer is well versed in your product. A good way to pique their interest is by targeting them with an update, new release or a lateral product.
+</p><p>
+B2B vs B2C, Business to Business selling or Business to Customers, the general public.
+</p><p>
+If your PPC is B2B keep in mind the following parameters for understanding your audience:
+</p><p>
+You’re targeting a much smaller population — your B2B buyer could be someone from any department (a CEO, an account, IT, etc).
+Your buyers do a lot of comparisons, so have a lot of credible info on hands such as white papers and case studies.</p><p>
+B2B sales typically take longer — B2B PPC is a long-term investment.
+Your CTAs should be completely different. The “buy now” approach is poor B2B practice. You want to woo other businesses with information, walk-through, and hands-on experiences.
+</p><p>
+PPC tools
+</p><p>
+Which Campaign Matches Your Business Goals & Audience?
+To narrow down a strategy we’ve outlined a few common PPC campaign outlines to help determine what’s in line with your business needs.
+</p><p>
+A Search Campaign – Your Goals Are Search-Based
+You are targeting customers who are already familiar with your brand. They are knowledgeable, interested and have a degree of trust. This is called warm traffic.</p>
+
+<h1>Chat Bots and AI Integration</h1>
+<p>
+Chatbots will continue to be an important part of digital marketing in 2020. This AI-based technology uses instant messaging to chat in real-time, day or night, with your customers or site visitors.
+</p><p>
+Recent surveys show:
+</p><p>
+Chatbots will power 85% of customer service by 2020
+Top benefits of chatbots are 24-hour service (64%), instant responses to inquiries (55%), and answers to simple questions (55%)
+63% of respondents prefer messaging an online chatbot to communicate with a business or brand
+By 2022, chatbots will help businesses save over £8 billion per annum
+80% of businesses want chatbots by 2020:</p>
+
+<h2> targeting competitor customers</h2>
+<p>
+You’re targeting competitor customers or cold traffic that isn’t aware of your brand. You have something they want, but they’re not familiar with your brand. This type of campaign is all about driving awareness by showing off your products to people with related search inquiries.
+</p><p>
+Product Listing Ads (PLA) – Your Goals Are Sales Based
+Users are familiar with your brand, but they are further along the sales funnel than search-based campaigns. By pushing PLA’s and implementing Calls-to-action, you want to drive direct response from consumers in the sales funnel. The goal doesn’t necessarily have to be sales. You could be pushing for downloads, leads, email sign-ups, or profile registrations.
+</p><p>
+Users are not familiar with your brand
+</p><p>
+Users are not familiar with your brand, so you want to bolster click-through rates to generate sales. Once they click through to your site you want to provide them with a value that will get them excited about your company.
+</p><p>
+Google Display Network & YouTube
+</p><p>
+You want to display ads to target customers with very specific preferences and demographic information. Placement tools (within Google Adwords) help you find the right websites to use. Display ads pop up on these websites that are partnered with Google, such as Youtube. Your goal here is to build brand awareness through a specialized website based targeting system.
+</p>
+<h2>contextual targeting tools</h2>
+<p>
+You want to use contextual targeting tools (within Google Adwords) to find groups of keywords that will help you target within your display network campaigns. You want to target keywords that follow the specific behaviours of your audience. The goal here is to target very specific groups of people.
+</p>
+<h2>Reputation Management</h2>
+<p>
+This is the art of ensuring positive review and presentation of your image online. Bad reviews and fake news can severely arm a firm and the remove of the erroneous content by disgruntled people who sometime remain a mystery is hard and difficult requiring detailed expertise. As part of any plan we normal offer this inclusively.
+</p>
+<h2>In Summation</h2>
+<p>
+Using PPC campaigns provides you with a lot of tools and multiple different avenues to help you reach your marketing business goals. But, if you don’t have a well thought out plan that matches the needs of your client, you may come up short. It’s important to strategic by being as specific as possible with your campaign. Speak the language of your audience, make adjustments based on the groups you’re targeting, and measure your progress to make sure you’re on the right track.
+</p>
+	<a href="services.html" title="web dev and digital services">Services</a><br>
+	<a href="webdev.html" title="webdev">Web Dev</a><br>
+	<a href="pricing.html" title="prices">Price Guide</a><br>
+	<a href="seo.html" title="SEO">SEO</a><br>
+<main>
+
+	</div>
+	</div>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	
+	<div class="outerflex">
+<div class="clickbox-footer">
+<a href="sitemap.html">Sitemap</a><br>
+	<a href="to.html">Lead Developer</a><br>
+	<a href="web-freelancers.html">Partners</a><br>
+	<a href="web-freelancers.html">Associates</a><br>
+	<a href="web-freelancers.html">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="internal-projects.html" title="web resources">Projects</a><br>
+</div>
+<div class="clickbox-footer">
+    <a href="about-digital-agency.html">About</a><br>
+	<a href="digital-agency.html">What we do</a><br>
+	<a href="seo.html">SEO</a><br>
+	<a href="specialisms.html">Specialisms</a><br>
+	<a href="ux.html">Usability Consultancy</a><br>
+	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+</div>
+<div class="clickbox-footer">
+<a href="process.html">Process</a><br>
+	<a href="news.html">News</a><br>
+	<a href="blog-web-design.html">Blog</a><br>
+	<a href="jobs.html">Jobs</a><br>
+	<a href="services.html">Services</a><br>
+	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="faq.html" title="frequently asked questions">FAQ</a><br>
+</div>
+</div>
+	
+</footer>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7528663.js"></script>
+
+</body>
+</html>

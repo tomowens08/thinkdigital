@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Think Digital Consultancy - Archive SEO Liverpool Manchester London
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	
+	background-color:rgba(171,12,39,1);
+	margin:0;
+	top:0;
+	font-family: 'Share Tech', sans-serif;
+}
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
+.maincont {
+	background-color:rgba(222,222,1111,0.9);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
+
+}
+.header {
+    position:relative;
+	height: 200px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
+}
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
+
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
+    display: inline-block;
+    cursor: pointer;
+	right: 5px;
+	margin:1em;
+	position:fixed;
+}
+/*the nav icon style*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CCC;
+    margin: 6px 0;
+	z-index: 8;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
+}
+.topbase{
+font-size:1.5em;
+margin:1.5em;
+float:left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+	z-index:9;
+    position: fixed;
+    background-color:rgba(255,0,34,0.8);
+    top: 70px;
+    right: 0;
+    color:#FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    background-color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	padding: 8px 8px 8px 32px;
+    top:0;
+	display: block;
+	right:5px;
+}
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
+
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
+}
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
+.clickbox {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
+	color: FFFFFF;
+	text-align:center;
+	
+	padding: 42px;
+	margin: 42px;
+	max-width: 30% !important;
+	background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+
+}
+.clickbox:hover{opacity:1;transition:1s;}
+
+.clickbox-footer {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #000;
+	color: FFFFFF;
+	text-align:left;
+	padding: 5em;
+	margin: 5em;
+	margin-left:3em;
+	line-height:3em;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+		
+function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+function openNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+    document.getElementById("mySidenav").style.width = "17em";
+    document.getElementById("main").style.marginRight = "17em";
+    document.body.style.backgroundColor = "rgba(255,255,255,0)";
+
+}
+
+function closeNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginRight= "0";
+    	document.body.style.backgroundColor = "white";
+    
+}
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
+</script>
+</head>
+<body>
+<div>
+   <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
+  <table><tr><td>
+<img src="img/mobile2.png" style="height:60px;width:auto;">
+  </div></td><td>
+  <div style="dispaly:table-column;">
+    <div style="dispaly:table-cell;">
+CONTACTS: 
+    </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
+<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  </div>
+  </div>
+</td></tr>
+</table>
+  </div>
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" title="Home">Home</a>
+  <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
+  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
+  <a href="about-digital-agency.html" title="Home">About</a>
+  <a href="web-properties.html" title="WEB DEV">Web Property</a>
+  <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
+  <a href="training-index.html" title="Training">Training</a>
+
+</div>
+</div>
+<div style="text-align:center;z-index:1;">
+
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
+
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
+</div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
+<main>
+<h1>Archive</h1>
+<h2>CMA Terms 2012</h2>
+<h2>Terms and Conditions for Website Design</h2>
+
+<h3>Preamble</h3>
+<p>
+All work carried out by Think Digital is deemed to be carried out under the following terms and conditions which are also publicly available on the company website.
+</p><p>
+These apply to the exclusion of all other terms and conditions unless stated otherwise in any covering correspondence.
+</p><p>
+These terms and conditions do not affect your statutory rights.
+</p><p>
+It is not necessary for any Client to have signed an acceptance of these terms and
+conditions for them to apply. If a Client allows work to proceed and gives verbal or written consent or makes an initial payment then the Client will be deemed to have satisfied themselves as to the terms applying and have accepted these terms and conditions in full.
+</p>
+<h3>Definitions:</h3>
+<p>
+In these terms “we/us/our” means Think Digital “you” means the Client, whose details appear on this proposal.
+</p><p>
+The “Contract” or “Agreement” means the agreement between you and us based on this and supporting documentation.
+</p><p>
+The “Website” and “Software”, or “Website Design Project” means the services to be provided under this Contract.
+</p>
+
+<h4>1. Variation.</h4>
+<p>
+1.1 These terms will remain valid for acceptance for 28 days from the date of issue.
+</p><p>
+1.2 After acceptance Think Digital reserves the right to amend these terms on each anniversary of the agreement subject to giving you 28 days’ notice.
+</p><p>
+1.3 If you have any uncertainties about these conditions as they might apply to you or
+your project, it is your responsibility to clarify the situation by contacting us before the
+project gets under way.
+
+2. Content.
+
+2.1 It is your responsibility to provide us with the required information about your
+business. Think Digital take no responsibility for errors in content supplied by you for the web site. Any changes thus occasioned may be chargeable.
+</p><p>
+2.2 Unless specified otherwise, it is your responsibility to provide all necessary text and
+graphic materials that make up the content of the site. No refund will be made in the
+event that you fail to provide sufficient content to complete the web site.
+</p><p>
+2.3 All content must be supplied in a suitable digital format unless agreed otherwise
+beforehand. Images should be supplied as jpeg, gif or Photoshop format. Text should be supplied as a Microsoft Word or ASCII text file. Failure to supply material in digital
+format may result in extra charges being made for processing content for use on your
+web site. Where the content which is provided is in a form where a sizeable amount of
+copywriting is required, a further charge may be made.
+</p><p>
+2.4 You grant Think Digital permission to utilize logos and any other company identity for the purposes of creating the website.
+</p><p>
+2.5 You agree to indemnify Think Digital from any and all claims arising from your negligence or inability to obtain proper copyright permissions for all content supplied.
+</p><p>
+2.6 A design credit with a link to the Think Digital website will appear on your web site.
+</p><p>
+2.7 You should provide Think Digital with copies of your terms and conditions and any privacy statement that you wish to be incorporated into the design.
+</p><p>
+2.8 In the event that a website is unable to be completed by Think Digital because of lack of text and/or pictures, then text will be added using “lorum ispsum” filler text and pictures using appropriate library pictures. At this point the website will be considered completed and invoiced accordingly under our standard payment terms. Final text and pictures will be added when these are produced by the Client at no additional cost.
+</p>
+<h2>3. Design and Development</h2>
+<p>
+3.1 We will provide you with our estimated timescale for progress and completion of the project and will use reasonable endeavours to meet those timescales (as long as you perform your obligations promptly).
+</p><p>
+3.2 Any quoted dates are our best estimates only and we cannot guarantee 100% that
+they will be met.
+</p><p>
+3.3 We shall have no liability to you nor be deemed to be in breach of this Contract if
+we are delayed in performing or unable to perform any of our obligations under it due
+to circumstances beyond our reasonable control.
+</p><p>
+3.4 Any design issues will be assessed against the standard of PC based internet viewing at 800 by 600 and 1280 by 1024 screen resolutions viewed in both Internet Explorer 6 and Firefox 1.01 unless we agree otherwise in writing.
+</p><p>
+3.5 Think Digital will use the most appropriate technology in the development of the site at the discretion of Think Digital . Unless agreed otherwise before hand between Think Digital and you.
+</p><p>
+4. Acceptance
+</p><h2>
+4.1 Acceptance procedure will be as follows:
+</h2><p>
+The timescale for the development of this project is indicated in the testing
+milestones/payment/sign off schedule attached or stated in writing by us and presented to you.
+</p><p>
+A URL may be provided for the Client to examine and test the website and software to
+make sure it functions as anticipated and in accordance with this Agreement.
+</p><p>
+The Client is required to complete the acceptance test schedule attached, Sign Off
+and accept at each milestone within 7 working days of being notified that the
+milestone has been reached.
+</p><p>
+An electronic version of the Acceptance test schedule will be provided for the Client
+to complete and email to Think Digital, receipt of this will comprise sign off. This may take the form of a simple acknowledgement email sent in reply to an email estimating project timescale and cost from Think Digital to you.
+</p><p>
+The Client is expected to have tested that the website and software is performing to
+their own satisfaction and checked the source data before authorising the project to
+go live.
+</p><p>
+The project will not be made live until the final payment has been received
+</p><p>
+After launch, a 60 day warranty is provided to allow for further comprehensive
+testing under operating conditions
+</p><p>
+Any further changes other than of a minor nature are then chargeable. Minor changes means errors and spelling mistakes, the definition of which is at Think Digital ’s discretion.
+</p><p>
+For a full and binding terms and conditions please contact support to be issued immediately.
+</p><p>
+Terms and Conditions are designed for the protection of the client.
+</p><p>
+Terms and Conditions may be superseded by anything agreed before hand.#
+</p>
+<h1>Article partial on SEO</h1>
+<h2>Spamdexing / "Black hat"</h2>
+
+<h3>Main article: Spamdexing</h3>
+<p>
+"Black hat" SEO are methods to try to improve rankings that are disapproved of by the search engines and/or involve deception. This can range from text that is "hidden", either as text colored similar to the background or in an invisible or left of visible div, or by redirecting users from a page that is built for search engines to one that is more human friendly. A method that sends a user to a page that was different from the page the search engined ranked is Black hat as a rule. One well known example is Cloaking, the practice of serving one version of a page to search engine spiders/bots and another version to human visitors.
+</p><p>
+Search engines may penalize sites they discover using black hat methods, either by reducing their rankings or eliminating their listings from their databases altogether. Such penalties can be applied either automatically by the search engines' algorithms or by a manual review of a site.
+</p><p>
+One infamous example was the February 2006 Google removal of both BMW Germany and Ricoh Germany for use of deceptive practices.[26] Both companies, however, quickly apologized, fixed the offending pages, and were restored to Google's list. [3] [4]
+</p>
+<h2>SEO and marketing</h2>
+<p>
+There is a considerable sized body of practitioners of SEO who see search engines as just another visitor to a site, and try to make the site as accessible to those visitors as to any other who would come to the pages. They often see the white hat/black hat dichotomy mentioned above as a false dilemma. The focus of their work is not primarily to rank the highest for certain terms in search engines, but rather to help site owners fulfil the business objectives of their sites. Indeed, ranking well for a few terms among the many possibilities does not guarantee more sales. A successful Internet marketing campaign may drive organic search results to pages, but it also may involve the use of paid advertising on search engines and other pages, building high quality web pages to engage and persuade, addressing technical issues that may keep search engines from crawling and indexing those sites, setting up analytics programs to enable site owners to measure their successes, and making sites accessible and usable.
+</p><p>
+SEO, as a marketing strategy, can often generate a good return. However, as the search engines are not paid for the traffic they send from organic search, the algorithms used can and do change, there are no guarantees of success, either in the short or long term. Due to this lack of guarantees and certainty, SEO is often compared to traditional Public Relations (PR), with PPC advertising closer to traditional advertising. Increased visitors is analogous to increased foot traffic in retail advertising. Increased traffic may be detrimental to success if the site is not prepared to handle the traffic or visitors are generally dissatisfied with what they find. In either case increased traffic does not guarantee increased sales or success.
+</p>
+<h2>Legal precedents</h2>
+<p>
+In 2002, SearchKing filed suit in an Oklahoma court against the search engine Google. SearchKing's claim was that Google's tactics to prevent spamdexing constituted an unfair business practice. This may be compared to lawsuits that email spammers have filed against spam-fighters, as in various cases against MAPS and other DNSBLs. In January 2003, the court pronounced a summary judgment in Google's favor.[27]
+</p><p>
+In March 2006, KinderStart.com, LLC filed a first amendment complaint against Google and also attempted to include potential members of the class of plaintiffs in a class action.[28] The plaintiff's web site was removed from Google's index prior to the lawsuit and the amount of traffic to the site plummeted. On March 16, 2007 the United States District Court dismissed KinderStart's complaint without leave to amend, and partially granted Google's motion for Rule 11 sanctions against KinderStart's attorney, Gregory John Yu, requiring him to pay part of Google's legal expenses.[29][30</p>
+
+<h2>2013 network concepts</h2>
+<p>
+Planning is the key to our success.
+We allow real flexibility as we can meet the precise requirements of any business or organization. Our network design and implementation consultancy team can help you to reduce the cost and the risk to your business. We always aim to create networks that not just value for money but that can, where possible, integrate with the emerging technologies without costing a fortune. We are focused on implementing network solutions around Microsoft platforms including Windows Server 2000, Windows Server 2003 or Windows 7 Operating Systems, or Microsoft Small Business Server 2000 and Small Business Server 2003, we also offer Macintosh.
+</p><p>
+Why Network?We carry out a network analysis of your current systems to determine how we can increase reliability and performance. We then draw up a network design which evolves into implementation and delivery phase of the new network infrastructure
+</p><p>
+Benefits: Improved productivity</p><p>
+A well designed network will improve communications and response times whilst increasing internal productivity through 'always on' high-speed connections to the Internet. Reduced costs
+</p><p>
+Networks reduce the per-user costs of central resources such as application servers, printers or specialist peripherals by sharing usage. Protected data
+A well designed network will include appropriate security measures and will centralize the data backup for your organization, making the regular protection of data a systematic routine task.
+
+</p>
+<p>ncmedia.net
+</p>
+<p>Network Concepts </p>
+<p>Media
+  Home | Network List | Subsideries | About | Services | Links | Investors | Contact
+  
+  Welcome to the central portal to the work of Network Concepts. </p>
+<p>
+Network Concepts does just that, making concepts for various networking sites for clients or for in-house development.
+</p><p>
+Network Concepts' network is a host of in-house developments, linked together for mutual benefit and public consumption.
+</p><p>
+This company is in it's infancy but has many ideas complete and nearly complete that will eventually be integrated.
+</p><p>
+The plan is to have a social networking site offered as the hub of the network, from there members can join poker and bingo websites all from one single login which draws it's data from a single Network Concepts database. </p>
+<p>This way member can interact and have knowledge of other friend's presence on the network cross-media, or cross individual website.
+  
+  Subsideries:
+  
+  Network concepts also offers a number of subsidiary services from website design to hosting. </p>
+<p>Freelance Web development cross-business: Owens - Media
+  
+  Bespoke Website design and Gaming systems: Think Digital
+  
+  Hosting through Host.NCmedia
+  
+  
+  
+  The Network:
+  
+  The concept here is profit from investors, buyers, renters and advertisers.
+  
+  Social Networking - Coming soon...  </p>
+<p>Poker - Coming soon...  </p>
+<p>Bingo - Coming soon...  </p>
+<p>aboutnc.html  </p>
+<p>Welcome to the central portal to the work of Network Concepts.
+  
+  Network Concepts does just that, making concepts for various networking sites for clients or for in-house development.
+  
+  Network Concepts' network is a host of in-house developments, linked together for mutual benefit and public consumption. </p>
+<p>
+This company is in it's infancy but has many ideas complete and nearly complete that will eventually be integrated.
+</p><p>
+The plan is to have a social networking site offered as the hub of the network, from there members can join poker and bingo websites all from one single login which draws it's data from a single Network Concepts database. This way member can interact and have knowledge of other friend's presence on the network cross-media, or cross individual website.
+</p>
+affiliates.html
+<p>
+We have a Fantastic Affiliate Program in place.</p><p>
+</p><p>
+It is unusual among Website design companies to have an Affiliate system due to the nature of payment processing. However our system ensures a commission earned from both online and offline sale that arise from your promotions.
+</p><p>
+So How Does It Work? Online transactions are easy to track. Any resulting link from a banner or link you place on your website to use that results in a follow through by that visitor, monitored by Cookie tracking data, will entitle you a profit share of that sale.
+</p><p>
+Off-line sales however are ensured by entitling any customer a discount for nominating your promotional advertisement available elsewhere online. It is usual to ask a client about where they saw the product advertised, for market research purposes, here you leverage this to your own advantage. In addition Clients can also mention any leaflet or other offline campaign which you promoted by quoting your unique identifier ID or website URL for such a discount.
+</p><p>
+We can back approve affiliation, so copy the code now and identify your web site from our referrals later. When you start to earn you can register then! We will actively seek out good earners to see how we can work together in other ways.
+</p><p>
+Copy & Paste this Code:
+</p><p>
+Banner 906x93
+</p><p>
+<a href="https://web.archive.org/web/20090126214837/http://www.airsideuk.com/index.html?entry=Ey0Azp4SzKC2UF6AxGz36A"><img src="https://web.archive.org/web/20090126214837im_/http://www.airsideuk.com/Affiliate_banner/banner468x60.swf"/></a>
+</p><p>
+Tower 93x906</p><p>
+</p><p>
+<a href="https://web.archive.org/web/20090126214837/http://www.airsideuk.com/index.html?entry=Ey0Azp4SzKC2UF6AxGz36A"><img src="https://web.archive.org/web/20090126214837im_/http://www.airsideuk.com/Affiliate_banners/tower80x400.swf"/></a>
+</p><p>
+Box 250x250</p><p>
+</p><p>
+<a href="https://web.archive.org/web/20090126214837/http://www.airsideuk.com/index.html?entry=Ey0Azp4SzKC2UF6AxGz36A"><img src="https://web.archive.org/web/20090126214837im_/http://www.airsideuk.com/Affiliate_banner/box250x250swf"/></a>
+</p><p>
+We are currently offering 5% for you and 5% for customers. You may also employ a cash back system inclusive of this customer discount. For information on Cash Back systems you can use for other links and companies, please get in touch.              You may also need an ad pooling system, we can help.
+</p><p>
+Visit some of our partner website to take advantage of further great Affiliate offers.
+</p><p>
+Log in ID:	
+ </p><p>
+Password:	
+Login or Register at any time. When you register you may be required to alter creative to prevent confusion.
+</p><p>
+ 
+
+Contact your personal advisor anytime:
+
+Name and Personal details fields are not required. All information is confidential.
+
+</p>
+
+<p>hosting
+
+</p><p>
+
+We have 2 major hosting plans:</p><p>
+
+Managed Hosting - BUY NOW</p><p>
+
+£ 60.00 per year for 1 years Managed Hosting Plan</p><p>
+
+Make payments with PayPal - it's fast, free and secure!Make payments with PayPal - it's fast, free and secure! PayPal button</p><p>
+FREE Domain Name - We grant a free domain name to every new customer who orders our hosting plan - 15 each thereafter (.com, .co.uk, .net, .org)</p><p>
+UNLIMITED Subdomains FREE Database - 5 each thereafter FREE E-mail Account - 5 each thereafter</p><p>
+UNLIMITED FTP Accounts ( 1 per domain, 5 each for more) UNLIMITED SSH Accounts ( 1per domain, 5 each for more)
+</p><p>
+FREE Setup - We don't have any hidden charges and provide free instant setup of your accounts
+</p><p>
+FREE e-Commerce Script - With this script you can easily copy and paste to HTML and enjoy the web-application.</p><p>
+
+FREE Telephone Support Unique hosting service</p><p>
+
+50 GB STORAGE :::::::::::::::::::::50 GB DATA</p><p> TRANSFER :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</p><p>
+
+ADMIN AREA INCLUDES</p><p>
+
+File manager</p><p>
+Add emails section</p><p>
+Add hosting account section</p><p>
+Add free domains (by DNS transfer)</p><p>
+Purchase new domains</p><p>
+Scripts section</p><p>
+Add database</p><p>
+Feedback/ Comments/ Inform Supervisor</p><p>
+Linux & Windows development tools are supported</p><p>
+
+OUR PROMISE</p><p>
+
+You will not be debited every year without explicit instruction by you. There is a 30 Money back cancellation guarantee. This does not apply if the space is used for pirated material transfer. Investigations are usual.</p><p>
+</p><p>
+Reseller Manual Hosting - BUY NOW
+</p><p>
+£ 120.00 per year - Find out more and make purchase here hosting
+</p><p>
+NOTE: ONLY FOR QUALIFIED WEBSITE DESIGNERS TO USE, NOT FOR GENERAL CONSUMPTION.
+</p><p>
+UNLIMITED Domains UNLIMITED Subdomains UNLIMITED Database UNLIMITED E-mail Account UNLIMITED FTP Accounts UNLIMITED SSH Accounts
+</p><p>
+FREE Domain Name - We grant a free domain name to every new customer who orders our hosting plan.
+</p><p>
+FREE Setup - We don't have any hidden charges and provide free instant setup of your accounts
+FREE 50 Pre-installed Scripts - With these scripts you can easily install and enjoy the most popular web-applications.
+</p><p>
+Linux & Windows development tools are supported
+</p><p>
+All Our Plans come with discounted web design and development packages, should you require them, SEO and update plans. Find out more by calling or emailing us now.
+</p><p>
+We also provide domain registration under the same conditions of managed or manual.</p>
+
+
+<main>
+
+	</div>
+	</div>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	
+	<div class="outerflex">
+<div class="clickbox-footer">
+<a href="sitemap.html">Sitemap</a><br>
+	<a href="to.html">Lead Developer</a><br>
+	<a href="web-freelancers.html">Partners</a><br>
+	<a href="web-freelancers.html">Associates</a><br>
+	<a href="web-freelancers.html">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="internal-projects.html" title="web resources">Projects</a><br>
+</div>
+<div class="clickbox-footer">
+    <a href="about-digital-agency.html">About</a><br>
+	<a href="digital-agency.html">What we do</a><br>
+	<a href="seo.html">SEO</a><br>
+	<a href="specialisms.html">Specialisms</a><br>
+	<a href="ux.html">Usability Consultancy</a><br>
+	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+</div>
+<div class="clickbox-footer">
+<a href="process.html">Process</a><br>
+	<a href="news.html">News</a><br>
+	<a href="blog-web-design.html">Blog</a><br>
+	<a href="jobs.html">Jobs</a><br>
+	<a href="services.html">Services</a><br>
+	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="faq.html" title="frequently asked questions">FAQ</a><br>
+</div>
+</div>
+	
+</footer>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7528663.js"></script>
+
+</body>
+</html>

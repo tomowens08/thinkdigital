@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Think Digital Consultancy - New Media Web Design Training SEO Liverpool Manchester London
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="New Media Web Design Training SEO Liverpool">
+<meta name="keywords" content="web, design, development, online, ads, advertising">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+	<meta charset="UTF-8">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style>
+html{
+	margin:0;
+	top:0;
+	left:0;
+	bottom:0;
+}
+body {
+	
+	background-color:rgba(225,22,0,0.9);
+	margin:0;
+	top:0;
+	font-family: 'Share Tech', sans-serif;
+}
+main {
+	color: black;
+}
+main h1 {
+	color:red;
+}
+	main a {
+		background-color: coral;
+		color: whitesmoke;
+	}
+	main a:hover{
+		background-color:red;
+		color: antiquewhite;
+	}
+.maincont {
+	background-color:rgba(222,222,1111,0.9);
+	padding: 25px;
+	margin: 25px;
+	color:#FFFF;
+        font-size:1.5em;
+
+}
+.header {
+    position:relative;
+	height: 200px; top:0px;
+	z-index:-2;
+	overflow:hidden;
+	background-color: white;
+}
+		.pointer {
+			position: absolute;
+			height: 100%; 
+			top:0;
+			left:0;
+			z-index:-1;
+			transition:0.5s ease-out;
+			background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+			
+		}
+
+		.pointer img {
+			width: 1500px;
+			opacity:0;
+			z-index:-1;
+		}
+		.portfolio {
+			position: absolute;
+			left:0;
+			height: 500px;
+			width:100%;
+			transition:1s ease-out;
+	
+		}
+		#kf{
+			width:100%;
+			height:100%;
+			top:0;
+			z-index:-4;
+			background-image:url("img/kfi.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#hs{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-3;
+			background-image:url("img/hs.png");
+			background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#es{
+		    top:0;
+			width:100%;
+			height:0%;
+			top:0;
+			z-index:-2;
+			background-image:url("img/esw.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		#cc{
+		    top:0;
+			width:100%;
+			height:0%;
+			z-index:-1;
+			background-image:url("img/cc.png");
+			background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			transition: 0.4s;
+		}
+		.container {
+    display: inline-block;
+    cursor: pointer;
+	right: 5px;
+	margin:1em;
+	position:fixed;
+}
+/*the nav icon style*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CCC;
+    margin: 6px 0;
+	z-index: 8;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+ a {
+    text-decoration:none;
+    color:#FFF;
+    cursor:pointer;
+}
+.topbase{
+font-size:1.5em;
+margin:1.5em;
+float:left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+	z-index:9;
+    position: fixed;
+    background-color:rgba(255,0,34,0.8);
+    top: 70px;
+    right: 0;
+    color:#FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FFF;
+    background-color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+	padding: 8px 8px 8px 32px;
+    top:0;
+	display: block;
+	right:5px;
+}
+.logo {
+	height:100%;
+	width:auto;
+}
+.clip-polygon {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 65%, 100% 100%, 75% 100%, 30% 100%, 0% 75%);
+  /* Note that percentages work as well as px */
+  height:500px;
+
+  background-image:url('img/arr.png');
+			
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+        
+           
+}
+
+.controls {
+	text-align: left;
+	z-index:999;
+}
+.controls span div {
+    display: table-cell;
+}
+
+#clickthru {
+    width: 1em;
+	height:auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+#clickthru:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.outerflex {
+	display:flex;
+	flex-wrap: wrap;
+}
+.outerbox {
+  	border-width: 5px;
+	padding: 42px;
+	margin: 42px;
+}
+
+.clickbox {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #FFF;
+	background-color:  #FF7F50;
+	opacity: 0.8;
+	color: FFFFFF;
+	text-align:center;
+	
+	padding: 42px;
+	margin: 42px;
+	max-width: 30% !important;
+	background-image: url("img/street-art.png");
+			height: 100%;
+
+            /* Create the parallax scrolling effect */
+             background-attachment: fixed;
+            background-position: center;
+           background-repeat: no-repeat;
+            background-size: cover;
+			
+
+}
+.clickbox:hover{opacity:1;transition:1s;}
+
+.clickbox-footer {
+	border-style: solid;
+  	border-width: 5px;
+	border-color: #000;
+	color: FFFFFF;
+	text-align:left;
+	padding: 5em;
+	margin: 5em;
+	margin-left:3em;
+	line-height:3em;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+		
+function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+function openNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);closeNav();");
+    document.getElementById("mySidenav").style.width = "17em";
+    document.getElementById("main").style.marginRight = "17em";
+    document.body.style.backgroundColor = "rgba(255,255,255,0)";
+
+}
+
+function closeNav() {
+document.getElementById("xbtn").setAttribute("onclick", "myFunction(this);openNav();");
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginRight= "0";
+    	document.body.style.backgroundColor = "white";
+    
+}
+function openKf() {
+	document.getElementById("kf").style.height = "100%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openHs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "100%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openEs() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "100%";
+	document.getElementById("cc").style.height = "0%";
+}
+function openCc() {
+	document.getElementById("kf").style.height = "0%";
+	document.getElementById("hs").style.height = "0%";
+	document.getElementById("es").style.height = "0%";
+	document.getElementById("cc").style.height = "100%";
+}
+</script>
+</head>
+<body>
+<div>
+   <div style="position:fixed;top:10px;left:10px;color:#FFFFFF;">
+  <table><tr><td>
+<img src="img/mobile2.png" style="height:60px;width:auto;">
+  </div></td><td>
+  <div style="dispaly:table-column;">
+    <div style="dispaly:table-cell;">
+CONTACTS: 
+    </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,221,0.5);padding:5px;">
+<a href="tel:07393454253" style="color:#FFFFFF;">0739 34 54 253</a>
+  </div>
+  <div style="dispaly:table-cell;background-color:rgb(221,160,201,0.2);padding:5px;">
+<a href="mailto:info@thinkdigitalagency.co.uk" style="color:#FFFFFF;">info@thinkdigitalagency.co.uk</a>
+  </div>
+  </div>
+</td></tr>
+</table>
+  </div>
+  <div id="xbtn" class="container" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" title="Home">Home</a>
+  <a href="index.html#web-dev" title="WEB DEV">Web Dev</a>
+  <a href="index.html#seo-ppc" title="SEO and PPC">SEO/ PPC</a>
+  <a href="index.html#upskill-your-people" title="Training">UpSkill your People</a>
+  <a href="index.html#PORTFOLIO" title="portfolio">Portfolio</a>
+  <a href="index.html#contacts" title="contact web deisgners near me">Contact</a>
+  <a href="about-digital-agency.html" title="Home">About</a>
+  <a href="web-properties.html" title="WEB DEV">Web Property</a>
+  <a href="offers.html" title="No Obligation SEO Strategy">Free Analysis</a>
+  <a href="training-index.html" title="Training">Training</a>
+
+</div>
+</div>
+<div style="text-align:center;z-index:1;">
+
+<div class="header" style="top:0px;left:0px;right:0px;width:100%;">
+<img src="img/TDh1.png" class="logo">
+
+	<div class="pointer"> <img src="img/street-art.jpg" alt="web dev liverpool"> </div>
+</div>
+</div>
+	<div style="height:100%;width:100%;margin:0;">
+	<div class="maincont">
+<main>
+<h1>Pricing Structure terms and guide</h1>
+
+<h2>Usual terms</h2>
+<p>
+Call or email is now to find out about our package deals from as little as £300! As well as hosting and domain registration which is all you need and all in in one great package. Hosting is annual as are usually domain registrations but the website remains yours to use for ever.
+</p><p>
+We in most cases charge by a fixed package fee. In some circumstances we may charge at a negotiable rate or in accordance with the terms below.
+</p><p>
+Typically Database products and e-commerce will cost, being of a higher price bracket. We are mainly concerned with the time taken on our part to complete the project. Discounts are available where terms can be agreed to ensure we are paid on in stages.
+</p><p>
+Prices are essentially negotiable. Rates are subject to supply and demand.
+</p>
+<h2>Exceptional terms.</h2>
+<p>
+In exceptional circumstances we may charge at a negotiable rate or in accordance with the terms below.
+</p><p>
+Outside these terms we charge by day but also a product fee on the use of pre-assembled script. Also there will be a charge for hosting and registration of a domain name on a subscription basis usually yearly. This subscription will also include email boxes on that server. A website package at its most basic includes hosting, domain name registration and website design.
+</p>
+<h4>Optional Copyright Transfer or Registration of IP rights.</h4>
+<p>
+Copyright transfer will also be charged where applicable. If a copyright must be sought there will be a fee for seeking that copyright by ourselves and a fee levied by the third party involved.
+</p>
+<h2>Other terms</h2>
+<p>
+Where content will need to be supplied by your self then we will need this before work can begin where deposit may be required or we can work on a stage payment basis where payment will need to be made at such a stage where we are waiting on content required. If you already have secured elements of a website package such as a domain name by a third party, then the relationship between us and such a third party will need to be established and understood immediately. In the event of a domain name issue, here we will require contact details with that party.
+</p><p>
+Should the third party or your self need to maintain ownership then we will need written agreement that this party will point “‘DNS setting” to our servers else a transfer of ownership will be needed, the “IPS tag” will need to be transferred and ownership given to ourselves by this act. In the case of a .UK domain then a certificate will need to be produced by the third party confirming Nominet registration. We will need this issue resolved immediately.
+</p><p>
+Where imagery and content would need to be generated by ourselves then we charge per day as well as for expenses. We supply the services of a third party photographer with recommendation should you require and will be responsible in the terms of this agreement for failure on his part to meet deadlines.
+</p><p>
+Service may include stages of design, approval or rejection on consultation with the client, a possible further design stage where directions are followed exactly. Then amendments are made such as small alteration to text and image placements are handled lastly. Lastly the site is approved and sent live. Provided we work to this agreement we will expect payment regardless of client satisfaction unless where stage payment terms can be agreed where upon design approval further payment is made.
+</p><p>
+Client happiness with their product is important to us but we will always expect payment for our time and will require reimbursement for expenses, records of transaction will be kept.
+</p>
+<h1>Grant Information Page (2015),</h1>
+
+<p>
+That's right...
+</p><p>
+If you're very interested in taking advantage of the most prolific and cost effective form of advertising in the world but are unsure of the costs involved then worry no more.
+</p><p>
+We can obtain grant approval for you through our contacts and partners where you will be able to use that money to fund your project development.
+</p><p>
+We will process the grant application for you and contact you if your successful.
+</p><p>
+Speak to one of our advisers now to find out just how much CMA can do for your business.
+</p><p>
+If your a Liverpool, Cheshire or Knowsley based business, a start up or running just one year then we can help you.
+</p><p>
+Only a limited amount of funding is available for this so please do contact us as soon as possible to express your interests.
+ </p><p>	 	 
+web design
+</p>
+
+<h1>Prices</h1>
+<p>
+The prices are true as of the date of publication 17 April 2020. Pricing varies depending on process.
+Essentially one can have fixed term or plan.
+</p><p>
+Our Liverpool web design agency offers a full range of professional website design and development services. Over the past 20 years now, we have designed thousands of websites that have helped our clients shift their online presence and business into a greater success story. Our beautiful and stylish professional websites are usable, user-friendly, optimized for search engines and for multi-device experiences through responsive design processes.
+</p><p>
+At This Web Design Firm, we have a long term goal: to provide the best quality and professional web design services at an affordable price through a mixture of competitive delivery and payment terms that are conscience of a businesses growth cycle.
+</p><p>
+We can do this with the following options:
+</p><p>
+1. Plans</p><p>
+2. Fixed terms</p><p>
+3. Default Pricing Structure.</p><p>
+</p><p>
+Lets begin with the firm option which is recommended for evolving concepts, a plan:</p>
+<h2>Plans</h2>
+<p>
+Plans are essentially a monthly fee either pay as you go or more of a rental option. The client will remain the owner of the software developed for them after the term of the build has been made and is deliverable.
+</p><p>
+We understand than you may not be certain on what you want the website or digital project to be until mod or post development, which is why a plan makes more sense. However, if you worried about racking up a large payment plan and want to know the total cost up front then a fixed term contract works better.
+</p>
+<h2>Fixed term</h2>
+<p>
+Fixed term jobs are quoted ad hoc and if the plan changes from the initial agreement, this fixed term may default to a plan or hourly rate depending on complexity. We will attempt to make this favourable to the client.
+</p><p>
+Its important to lean about the background of pricing based on industry standard and get an idea of the default structure for prices.
+</p>
+<h2>Pricing for web services</h2>
+<p>
+Whether you’re looking to launch or revamp your company’s website, you’re probably wondering this common web design question, how much does web design cost? 
+</p><p>
+With professional web design prices ranging from £1000 to more than £100,000, there are a variety of factors that influence the cost of web design. Ready to learn what they are, plus what you should pay for web design services?
+</p><p>
+<h3>Web design costs for your web page or site </h3>
+<p>
+The average cost for designing a website, based on what most people charge, ranges from £1000 to more than £100,000. These are the prices that this company adherers to in any quote unless stated. Several factors impact the price of web design, including the website’s style, size, and functionality. This generally refers to the complexity but what should you spend on yours?
+</p>
+<h3>Website design pricing guide for this company.</h3>
+<p>
+Already want a custom web design quote? The give our winning team a ring, or contact us online to discover what our talented team of web designers and digital marketers can do for you.
+</p><p>
+A basic web design costs between £1000 to £10,000. It provides your business with a simple, yet effective website ad internet presence. Like mid-level and advanced web design, basic or typical web design creates a website specific to your brand and goals, this is often called a brochure website.
+</p><p>
+If you’re a small business or start-up, basic website design offers a cost-effective option to individuals. It provides your company with a credible, usable site that can start driving leads and purchases, quotation requests, telephone calls, and much, much more.
+</p>
+<h3>Middle sized Web Development or Digital Marketing from £10,000 up to £50,000</h3>
+<p>
+An intermediate or middle sized web design may cost between £10,000 to £50,000. It provides your business or online presence with a gorgeously designed, performance orientated website. It often includes additional features, like a Content Management System which is also called a CMS for short or copywriting, to meet your company’s bespoke needs.
+</p><p>
+If you’re a small to middle sized enterprise or SME, intermediate web design can offer an ideal solution for scalability without busting the bank. It also gives your company the means to advance its other digital marketing strategies in a growth conscience way. A Content Manager, for instance, helps you publish content yourself and will also support your content marketing strategy, allowing your internal staff to pay a part.
+</p><p>
+<h3>Advanced or complex Website Design Projects, including special projects</h3> 
+</p><p>
+An advanced or complex web design project costs between £50,000 and £100,000. It provides your online business with a custom, cutting-edge website, and well tested deliverable. This web design level can feature several bolt on services, like MSSQL database integration, unusual e Commerce functionality, and unique functionality such as with an inventive concept.
+</p><p>
+You may have a new idea, in how the web should work, you may have an application or App concept which is untried but possible. This ay require research and development with uncertain findings.
+</p><p>
+If you’re an enterprise or corporation level of company, advanced web design offers a solution that matches your firm’s scale. It also maximizes your conversion rate (CRO) and returns on investment, which is critical in your competitive market in which you operate. Our seasoned staff can advise on stakeholder management and strategic group analysis.
+</p><p>
+As you can now clearly tell, the size of your corporation or company often determines your web design budget.
+</p><p>
+Just because you purchase a basic web design package, however, doesn’t mean you’re receiving a lower-performing website. Instead, you’re buying a site that correlates to your size, needs, and goals, versus paying for features that you don’t need.
+</p><p>
+The size of your website plays a significant role in web design pricing.
+</p><p>
+If you’re looking to create a larger site, you can expect to pay more for web design services. It requires more time and works to develop, build, and launch a big website with advanced capabilities like those needed for e-commerce stores.
+</p><p>
+In most cases, agencies define the size of your website by the number of pages. For instance, at WebFX, we have five different page ranges. You can experiment with these using our web design price calculator.
+</p><p>
+Another factor that affects your web design costs is Copywriting.
+</p><p>
+Depending on your digital marketing strategy, as well as budget, your company may use your agency’s copywriting services for your webpages. If you do, it’s wise to partner with a full-service digital marketing agency like WebFX that offers more than just web design services.
+</p><p>
+A full-service agency can provide optimized copy that captures your brand, product features, and unique selling points. What is optimized copy, though? It’s content that targets keywords relevant to your business and target audience.
+</p><p>
+For example, if someone wants to purchase slippers, they may search for, “women’s slippers.” This search example features the keyword, “women’s slippers,” which you can target on your product page for Women’s Slippers.
+</p><p>
+If you’re unfamiliar with optimizing content for search engine optimization (SEO) — like in the previous example — then it’s worth paying for site copywriting. With this service, you can maximize the performance of your website, as well as your ROI.
+</p><p>
+How does copywriting impact your web design pricing, though?
+</p><p>
+While the cost of copywriting varies, you can expect to pay per word or webpage. If you’re an e-commerce store, product pages generally cost around £60 per page — e-commerce product pages have a lower price due to their shorter word count.
+</p><p>
+The style of websites varies a lot, which is why your preferred site style impacts your web design pricing.
+</p><p>
+For example, if you’re a luxury jewellery company, you’re probably looking to create a high-end website that conveys not only your brand but also your product or service quality. In comparison, a roofing contractor’s web design may feature a more laid-back, yet professional design with a focus on trust.
+</p><p>
+In most cases, that tends to cost more due to the amount of design and labour required.
+
+No matter what sort of style you’re looking for, from simple to high-end, it’s critical that your agency creates a website that captures your brand, as well as provides an intuitive and seamless experience for shoppers.
+</p>
+<main>
+
+	</div>
+	</div>
+<footer style="margin:0;bottom:0;width:100%;background-color:#000;color: white;">
+	<div>
+	
+	<div class="outerflex">
+<div class="clickbox-footer">
+<a href="sitemap.html">Sitemap</a><br>
+	<a href="to.html">Lead Developer</a><br>
+	<a href="web-freelancers.html">Partners</a><br>
+	<a href="web-freelancers.html">Associates</a><br>
+	<a href="web-freelancers.html">Lease Partnerships</a><br>
+	<a href="terms.html" title="terms and condisions">T&Cs</a><br>
+    <a href="resources.html" title="web resources">Resources</a><br>
+    <a href="internal-projects.html" title="web resources">Projects</a><br>
+</div>
+<div class="clickbox-footer">
+    <a href="about-digital-agency.html">About</a><br>
+	<a href="digital-agency.html">What we do</a><br>
+	<a href="seo.html">SEO</a><br>
+	<a href="specialisms.html">Specialisms</a><br>
+	<a href="ux.html">Usability Consultancy</a><br>
+	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+</div>
+<div class="clickbox-footer">
+<a href="process.html">Process</a><br>
+	<a href="news.html">News</a><br>
+	<a href="blog-web-design.html">Blog</a><br>
+	<a href="jobs.html">Jobs</a><br>
+	<a href="services.html">Services</a><br>
+	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+    <a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+    <a href="faq.html" title="frequently asked questions">FAQ</a><br>
+</div>
+</div>
+	
+</footer>
+
+</body>
+</html>
