@@ -176,12 +176,16 @@ html {
 .sidenav3 a, .sidenav3 p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 24px;
   color: #818181;
   display: block;
   transition: 0.3s;
 
 }
+.sidenav3 .desc {
+	font-size:1rem;
+}
+
 
 .sidenav3 a:hover{
   color: #f1f1f1;
