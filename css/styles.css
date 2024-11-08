@@ -384,3 +384,16 @@ main a:hover {
   .sidenav5 {padding-top: 15px;}
   .sidenav5 a {font-size: 18px;}
 }
+
+.dark-section{
+        background-color: black;
+        color:azure;
+        width:100%;
+        left:0;
+        right:0;
+        text-align:center;
+    }
+    .light-section img {
+        width:100%;
+        height:auto;
+    }
