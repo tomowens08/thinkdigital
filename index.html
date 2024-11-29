@@ -1,241 +1,607 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Freelance Contractor Northwest, Think Web Design | Think Digital</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <meta charset="UTF-8">
-  <meta name="description" content="Freelance website design consultancy and related contractor, full-stack services">
-  <meta name="keywords" content="Web site design, digital marketing, web design">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="http://fonts.cdnfonts.com/css/moltors" rel="stylesheet">
+<meta charset="UTF-8">
+	<title>Thinking of Website Design? Think Digital</title>
+	<meta name="description" content="Web development and web design solutions for online advertsiing across the UK and Europe.">
+	<meta name="keywords" content="web, design, web design, advertsing, advertise, advertizing, advertize.">
+	<meta name="author" content="Owens T, Web Dev and Advertising">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Cambria' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://thinkdigital.js.org/cambria-legal/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="http://fonts.cdnfonts.com/css/moltors" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-  
+<link href="http://thinkdigital.js.org/css/styles.css" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="http://thinkdigital.js.org/cambria-legal/js/js.js"></script>
+  <style>
+.overlay{
+  padding:100px;
+  background-color:white;
+}
+form {
+	text-align:center;
+	background-color:black;
+	width:100%;
+	padding:2rem;
+	color:whitesmoke;
+}
+form input, form textarea, form select{
+	width:50%;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	border-bottom:1;
+	border-color:white;
+	background-color:transparent;
+	color:white;
+}
+a:hover{
+	background-color:cyan!important;
+}
+h3 {
+	font-family: 'Share Tech', sans-serif;
+
+}
+.foot{
+	text-align:center;
+}
+.foot img {
+	width:100px;
+	height:auto;
+	padding:10px;
+}
+.footer-links{
+	text-align:right;
+	font-size:large;
+	color:white!important;
+}
+.footer-links a{
+	color:white!important;
+}
+.foot a:hover{
+    background-color:unset!important;
+	background-color:black!important;
+}
+.packages a:hover{
+	opacity:0.5;
+}
+.packages td {
+	width:25%;
+}
+.packages img {
+	width:100%;
+	height:auto;
+}
+.sidenav a:hover {
+	color:black!important;
+}
+.submitfm:hover{
+	background-color:cyan!important;
+	color:black;
+}
+a:visited {
+	color:darkgray;
+}
+.carousel-caption {
+	background:white;
+	
+}
+.carousel-caption a:visited {
+	color:rgb(0, 0, 0);
+}
+.main_h {
+    z-index: 1;
+}
+.sidenav2, .sidenav3, .sidenav4, .sidenav5{
+	z-index: 3;
+}
+  </style>
+
 </head>
+
+
 <body>
 
 
-<!--NAV-->
+
+
+<!--begin stationary navbar-->
+
+
+
+<div style="float:top;">
+<table style="width:100%;float:top;">
+  <tr>
+   <th id="logo" rowspan="3" style="text-align:left;">
+<img src="td3.png" style="cursor:pointer;height:auto;width:300px;padding:0.5em;" 
+alt="web design uk">
+
+
+</th>
+    
+	
+
+
+
+</h4></th>
+  </tr>
+
+  <tr>
+    <td  style="text-align:right;color:#000000;font-size:15px;"></br>
+	<span style="color:#11114B;font-size:18px;">&nbsp;&nbsp;</SPAN>
+	<a href="tel:+447898948203" style="background:transparent;">
+	<span style="font-size:20px;color:#000;">
+	0789 89 48 203&nbsp;<img src="http://thinkdigital.js.org/cambria-legal/img/mobile.png" height="30px" width="22px" 
+	alt=""></span></a></td>
+  </tr>
+</table>
+
+
+<!--  begin side nav -->
+<div class="main_h">
+<div id="xbtn" class="container-nav" onclick="myFunction(this);openNav();">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav2()">SERVICES</span></a>
-  <a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav3()">PORTFOLIO</span></a>
-  <a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav4()">CONTACT</span></a>
-  <a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav5()">...</span></a>
+  <a href="#" title="Home">Home</a>
+  <a href="digital-agency.html">Digital</a>
+  <a href="services.html">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#" onclick="openNav5();">...</a>
+
 </div>
-<span style="color:white;font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+</div>
+<!--   end side nav  -->
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 
+<div style="text-align:center;color:#000;max-height:5em;">
+
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="digital-agency.html">Digital</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+
+				
+
+	</li>
+		</ul>
+	</nav>
+	
+
+
+
+
+<table height="1px" width="100%" style="background-color:#000;"></table>
+
+
+</div>
+<!--end stationary nav bar -->
+
+<!-- IMPORT Slide-ins-->
 <div id="mySidenav2" class="sidenav2">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-<p class="stitle">Primarily full stack web development. Available for White Label development, contract, group, team or freelance.</p>
-<h2>Services</h2>
-
-<div class="row">
-  <div class="column" style="background-color:rgb(0, 215, 212);height:auto;overflow:auto;">
-    <h2>Web Dev</h2>
-    <p>Fullstack service</p>
-  </div>
-  <div class="column" style="background-color:rgb(0, 215, 212);">
-    <h2>Web Design</h2>
-    <p>Affordable fixed term packages.</p>
-  </div>
-  <div class="column" style="background-color:rgb(0, 215, 212);">
-    <h2>Graphic Design</h2>
-    <p>
-	Proven record of satisfactory delivery of concept.</p>
-  </div>
-  <div class="column" style="background-color:rgb(0, 215, 212);">
-    <h2>Search + Social</h2>
-    <p>Certified Google advice, 
-	pay-per-click and social marketing.</p>
-  </div>
-</div>
-</div>
-
-
-
-
-<script>
-function openNav2() {
-  document.getElementById("mySidenav2").style.width = "100%";
-}
-
-function closeNav2() {
-  document.getElementById("mySidenav2").style.width = "0";
-}
-</script>
-
-<div id="mySidenav3" class="sidenav3">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
-
-<h2>Portfolio</h2>
-
-<div class="row">
-<div class="column">
-  <div class="inner-column">
-  <div>
-  <img src="img/ccf.png" style="width:95%;">
-
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+ <!-- <p class="stitle">Available for White Label development, contract or freelance.</p>
+  <h2>Services</h2>
+  
+  <div class="row">
+	<div class="column" style="background-color:rgb(0, 215, 212);height:auto;overflow:auto;">
+	  <h2>Web Dev</h2>
+	  <p>Fullstack service</p>
 	</div>
+	<div class="column" style="background-color:rgb(0, 215, 212);">
+	  <h2>Web Design</h2>
+	  <p>Affordable fixed term packages.</p>
+	</div>
+	<div class="column" style="background-color:rgb(0, 215, 212);">
+	  <h2>Graphic Design</h2>
+	  <p>
+	  Proven record of satisfactory delivery of concept.</p>
+	</div>
+	<div class="column" style="background-color:rgb(0, 215, 212);">
+	  <h2>Search + Social</h2>
+	  <p>Certified Google advice, 
+	  pay-per-click and social media marketing.</p>
+	</div>
+  </div>-->
+
+  <h2>Brochure Website Design and Development</h2>
+  <p>Most websites are brochure websites, these are simpler website which 
+	do not involve e-commerce but suit most types of businesses.
+  </p>
+  <p>The brochure website is the online presence of a business that 
+	contains only a few pages and the important information users want. 
+	However, it comprises the epicentre of your digital marketing.
+	The purpose of a brochure website is to ensure convenient access 
+	to information, a central port-of-call for leads
+	and provide necessary communication with your customer base.</p>
+	<p>Why not send a quick email message, using our form or email address,
+		and we can send you a bit more information around scope, pricing or scale?</p>
+		<a href="#contact" onclick="closeNav2();">Contact Us</a>
+	</p>
   </div>
-   <a href="http://thinkdigital.js.org/cambria-legal"><p>Cambria Chambers</p></a>
-<p class="desc">Design and Development</p>
-  </div>
-  <div class="column">
-  <div class="inner-column">
-  <div>
-  <img src="img/hsf.png" style="width:95%;">
-  	</div>
-  </div>
-    
-	<a href="https://www.hotter.com"><p>Hotter Shoes</p></a>
-	<p class="desc">Frontend Development</p>
-  </div>
-  <div class="column">
-  <div class="inner-column">
-   <div>
-  <img src="img/atf.png" style="width:95%;">
-  	</div>
-  </div>
-    <a href="http://www.adapt-training.com"><p>Adapt UK</p></a>
-	<p class="desc">Backend CRM Build</p>
-    
-  </div>
-  <div class="column">
-  <div class="inner-column">
-   <div>
-  <img src="img/kfi.png" style="width:95%">
-  	</div>
-  </div>
-    <a href="#"><p>Keeno Fit</p></a>
-<p class="desc">Frontend + Application</p>
-  </div>
-</div>
-</div>
-<script>
-  function openNav3() {
-    document.getElementById("mySidenav3").style.width = "100%";
+  
+  
+  
+  
+  <script>
+  function openNav2() {
+	document.getElementById("mySidenav2").style.width = "100%";
   }
   
-  function closeNav3() {
-    document.getElementById("mySidenav3").style.width = "0";
+  function closeNav2() {
+	document.getElementById("mySidenav2").style.width = "0";
   }
   </script>
-
-<div id="mySidenav5" class="sidenav5">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
-<p style="color:rgb(0, 255, 251);">
-  <div class="outerflex">
-<div class="clickbox-footer">
-<a href="sitemap.html">Sitemap</a><br>
-	<a href="to.html">Lead Developer</a><br>
-	<a href="web-freelancers.html">Partners</a><br>
-	<a href="web-freelancers.html">Associates</a><br>
-	<a href="web-freelancers.html">Lease Partnerships</a><br>
-	<a href="terms.html" title="terms and condisions">T&amp;Cs</a><br>
-    <a href="resources.html" title="web resources">Resources</a><br>
-    <a href="internal-projects.html" title="web resources">Projects</a><br>
-</div>
-<div class="clickbox-footer">
-    <a href="about-digital-agency.html">About</a><br>
-	<a href="digital-agency.html">What we do</a><br>
-	<a href="seo.html">SEO</a><br>
-	<a href="specialisms.html">Specialisms</a><br>
-	<a href="ux.html">Usability Consultancy</a><br>
-	<a href="web-properties.html" title="Web Properties">Web Properties</a><br>
-    <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
-    <a href="privacy-policy.html" title="privacy">Privacy</a><br>
-</div>
-<div class="clickbox-footer">
-<a href="process.html">Process</a><br>
-	<a href="news.html">News</a><br>
-	<a href="blog-web-design.html">Blog</a><br>
-	<a href="jobs.html">Jobs</a><br>
-	<a href="services.html">Services</a><br>
-	<a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
-    <!--<a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
-    --><a href="faq.html" title="frequently asked questions">FAQ</a><br>
-</div>
-</div>
-
-
-
-</div>
-<script>
-  function openNav5() {
-    document.getElementById("mySidenav5").style.width = "100%";
-  }
   
-  function closeNav5() {
-    document.getElementById("mySidenav5").style.width = "0";
-  }
-  </script>
+  <div id="mySidenav3" class="sidenav3">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;&nbsp;</a>
+  
+  <h2>Projects</h2>
+ <!-- 
+  <div class="row">
+  <div class="column">
+	<div class="inner-column">
+	<div>
+	<img src="http://thinkdigital.js.org/img/ccf.png" style="width:95%;">
+  
+	  </div>
+	</div>
+	 <a href="http://thinkdigital.js.org/cambria-legal"><p>Cambria Chambers</p></a>
+  <p class="desc">Design and Development</p>
+	</div>
+	<div class="column">
+	<div class="inner-column">
+	<div>
+	<img src="http://thinkdigital.js.org/img/hsf.png" style="width:95%;">
+		</div>
+	</div>
+	  
+	  <a href="https://www.hotter.com"><p>Hotter Shoes</p></a>
+	  <p class="desc">Frontend Development</p>
+	</div>
+	<div class="column">
+	<div class="inner-column">
+	 <div>
+	<img src="http://thinkdigital.js.org/img/atf.png" style="width:95%;">
+		</div>
+	</div>
+	  <a href="http://thinkdigital.js.org/http://www.adapt-training.com"><p>Adapt UK</p></a>
+	  <p class="desc">Backend CRM Build</p>
+	  
+	</div>
+	<div class="column">
+	<div class="inner-column">
+	 <div>
+	<img src="http://thinkdigital.js.org/img/kfi.png" style="width:95%">
+		</div>
+	</div>
+	  <a href="#"><p>Keeno Fit</p></a>
+  <p class="desc">Frontend + Application</p>
+	</div>
+  </div>-->
+  <!--text about projects-->
+  <div style="text-align:left;">
+  <a href="goldenthread.net">Golden Thread</a>
+<p>Working jointly with external designer, Golden Thread wanted a web presence to match row-360.com
+They were particularly mindful about the user journey and wanted their online magazine subscription service to 
+meet the highest standard and compete with the biggest players.</p>
+<p>Golden thread is a term used to describe the hidden chain-of-command in the building safety industry.
+Built in Word Press, WooCommerce and a custom build on top of Betheme.</p>
+<br />
+<a href="crawshaws.co.uk">Crawshaws.co.uk</a> <a href="crawshawsconsumables.co.uk">crawshawsconsumables.co.uk</a>
+<p>One of the Northwest's premier Stone Consumables provider. Crawshaw's was moving away from tool retail to
+more of a focus of exclusive brands such as Ajour. This new website would show case these brands in their best light.
+They retained their old website for clearance purposes.<p>
+	<br />
+<a href="pagekirk.com">Page Kirk</a> <a href="pk.yellow-dev.co.uk">Dev</a>
+<p>An accountancy firm, bult in Wordpress with a particular focus on verbose content and security.
+The development website may also be available.</p>
+<br />
+<a href="industrymodels.co.uk">Industry Models</a>
+<p>Industry Models had ana existing website that they felt needed to go further. We added features such as model cards, so users can download PDF of models used frequently in the industry. The site was experiencing malware issues when we began work. This was resolved and new security provisions installed.</p>
+<br />
+<a href="wearenutrified.co.uk">We Are Nutrified</a>
+<p>Originally a React headless Wordpress build, they later switched to Shopify as the only solution for their packaging demands.</p>
+<br />
+highlandholidays.com ATOMIC
+<a href="https://highlandholidays.com/parks">Highland Holidays</a>
+<p>Originally built by Jet and now Atomic. I was responsible for the building of several features such as Glamping pages and interactive Holiday Parks sections.</p>
+<br />
 
-<div id="mySidenav4" class="sidenav4">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
-<p class="stitle">Primarily Full stack web based development services. Available for White Label development, 
-	contract, team or freelance.</p>
-<h2>Contact</h2>
+<a href="https://cove.co.uk/argyll-holidays/">Cove Argyl</a>
+<p>A holiday Parks company, website built in Drupal. Was responsible for some feature implementation. Website was an existing project.</p>
+<br />
+<a href="https://www.itdglobal.com">ITD Global</a>
+<p>We were responsible for the implementation of an existing design, built backend from the ground up and worked closely with the front end developer.
+I led the build as the Head of Digital.
+This is a React Headless Build.</p>
+<br />
+<a href="adapt-training.co.uk">Adapt</a>
+<p>A custom CRM sitting next to a Wordpress front end. Particularly difficult to achieve as it was a complex diary system for freelance instructors.</p>
+<br />
 
-<div class="row">
+<a href="hotter.com">Hotter</a>
+<p>UKs largest Shoe Manufacture. Front end was built using WebSphere and monetate. Was responsible from making JavaScript, front end feature implementation for the development cycle.</p>
+</div>
+ <!-- end text projects-->
+  </div>
+  <script>
+	function openNav3() {
+	  document.getElementById("mySidenav3").style.width = "100%";
+	}
+	
+	function closeNav3() {
+	  document.getElementById("mySidenav3").style.width = "0";
+	}
+	</script>
+  
+  <div id="mySidenav5" class="sidenav5">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+  <p style="color:rgb(0, 255, 251);">
+	<div class="outerflex">
+  <div class="clickbox-footer">
+  <a href="sitemap.html">Sitemap</a><br>
+	  <a href="to.html">Lead Developer</a><br>
+	  <a href="web-freelancers.html">Partnerships</a><br>
+	  <a href="terms.html" title="terms and condisions">T&amp;Cs</a><br>
+	  <a href="resources.html" title="web resources">Resources</a><br>
+	  <a href="internal-projects.html" title="web resources">Projects</a><br>
+	  <a href="about-digital-agency.html">About</a><br>
+  </div>
+  <div class="clickbox-footer">
+	  <a href="digital-agency.html">What we do</a><br>
+	  <a href="seo.html">SEO</a><br>
+	  <a href="specialisms.html">Specialisms</a><br>
+	  <a href="ux.html">Usability Consultancy</a><br>
+	  <a href="web-properties.html" title="Web Properties">Web Properties</a><br>
+	  <a href="gchq-security-compliance.html" title="cyber security">Cyber</a><br>
+	  <a href="privacy-policy.html" title="privacy">Privacy</a><br>
+  </div>
+  <div class="clickbox-footer">
+  <a href="process.html">Process</a><br>
+	  <a href="news.html">News</a><br>
+	  <a href="blog-web-design.html">Blog</a><br>
+	  <a href="jobs.html">Jobs</a><br>
+	  <a href="services.html">Services</a><br>
+	  <a href="software-consultancy.html" title="Software Consultancy">Consultancy</a><br>
+	  <!--<a href="ofsted-compliant-websites.html" title="Ofsted compliance Websites">OfSted Compliance</a><br>
+	  --><a href="faq.html" title="frequently asked questions">FAQ</a><br>
+  </div>
+  </div>
+  
+  
+  
+  </div>
+  <script>
+	function openNav5() {
+	  document.getElementById("mySidenav5").style.width = "100%";
+	}
+	
+	function closeNav5() {
+	  document.getElementById("mySidenav5").style.width = "0";
+	}
+	</script>
+  
+  <div id="mySidenav4" class="sidenav4">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+  
+
+	<h2>Digital Marketing Plans</h2>
+	<p>Probably what the general public refers to as advertising and the industry refers to as marketing,
+		 these are large scale digital marketing services
+	</p>
+	<p>Its often easier to spread the costs monthly, this way a project based build can be strentched in a monthly plan based on hours.
+	
+	</p>
+	<p>What this also means is we can assign hours (a fixed amount usually) to a client
+		 and by doing so, we can work with the client and shift around requirements.</p>
+		 <h2>How it works</h2>
+		 <p>As a client, you may get a great idea in the middle of the night or during a build, 
+			this way you can switch around your design team, assigning different tasks at different times.</p>
+	  <p>Not only this but you can do this with the peace of mind of knowing that there wont be surpise bills and the monthly fee is the same.</p>
+			<p>These plans can include web design, developement, ground -up on content managment and redesign of existing websites, digital designs, graphics, printing arrnagments and more.</p>
+			<p>We have plans to expand this service to include IT support, whey not ask about it?</p>
+			<h2>Get started or ask more</h2>
+			<p>Why not send a quick email message, using our form or email address,
+		  and we can send you a bit more information around scope, pricing or scale?</p>
+		  <a onclick="closeNav4();" href="#contact" >Contact Us</a>
+	  </p>
+
+  <!--<h2>Contact</h2>
+  
+  <div class="row">
+   
+	<div class="column" style="background-color:rgb(0, 215, 212);">
+	  <h2>Call</h2>
+	  <p>07898948203</p>
+	</div>
+	<div class="column" style="color:white;">
+	  <h2>Email</h2>
+		Mail Form down. Please use address: 
+	  <a href="mailto:tomowens.contact@gmail.com"><p>tomowens.contact@gmail.com</p></a>-->
+	  <!--<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>-->
+  <!--<script>
+	hbspt.forms.create({
+	  region: "eu1",
+	  portalId: "143193807",
+	  formId: "2041a356-1534-43e3-aacd-f14010f585f7"
+	});
+  </script>-->
+	</div>
+	
+  </div>
+  </div>
+  <script>
+	function openNav4() {
+	  document.getElementById("mySidenav4").style.width = "100%";
+	}
+	
+	function closeNav4() {
+	  document.getElementById("mySidenav4").style.width = "0";
+	}
+	</script>
+
+<!-- end slide-ins-->
+
+<div style="width:100%;max-height:400px;font-size:1.5em;background-attachment:fixed;
+background-color:#000;background-image:url('https://ak.picdn.net/shutterstock/videos/1044739036/thumb/1.jpg?ip=x480');background-size: 100% auto;
+padding:15%;color:#FFF;text-align:center;" data-jo="true">
+<p data-jo-content="editable" 
+style="padding:0.5em;background-color:black;opacity:0.6;">
+We streamline everything into comprehensive digital advertising plans.
+</p>
+</div>
+<!-- quoter -->
+
+<div style="text-align:center;background-color:#000;">
+
+<button class="quick-quote" style="background-color:#fff;:hover:#E3CB47;">
+<a href="contact.html#quote" style="color:#000;font-weight:bold;" data-jo="true" data-jo-content="editable">
+FREE ONLINE ENQUIRY</a>
+</button>
+
+</div>
+
+<!-- end quoter -->
+<!-- start platforms-->
+ <div style="text-align:center;padding-bottom:150px;">
+	<h3 style="margin-bottom:130px;margin-left:50px;">Platforms</h3>
+ <img src="platforms.png" style="width:80%;height:auto;">
+</div>
+ <!--end platforms-->
+<!-- start carousell -->
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+	<!-- Indicators/dots -->
+	<div class="carousel-indicators" style="background-color:black;">
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+	  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	</div>
+	
+	<!-- The slideshow/carousel -->
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="cc2.png" alt="Cambria Legal Brochure Websites" class="d-block" style="width:100%; height:auto;">
+		<div class="carousel-caption" style="color:black;">
+		  <h3><a href="http://thinkdigital.js.org/cambria-legal/">Cambria Legal</a></h3>
+		  <p>Cambria needed a new Frontend and custom CMS, we delivered!</p>
+		</div>
+	  </div>
+	  <div class="carousel-item">
+		<img src="hs2.png" alt="Hotter" class="d-block" style="width:100%; height:auto;">
+		<div class="carousel-caption" style="color:black;">
+		  <h3><a href="https://www.hotter.com">Hotter</a></h3>
+		  <p>The largest shoe manufacturer in the UK. They needed quick delivery on launch, we came through.</p>
+		</div> 
+	  </div>
+	  <div class="carousel-item">
+		<img src="at2.png" alt="Adapt" class="d-block" style="width:100%; height:auto;">
+		<div class="carousel-caption" style="color:black;">
+		  <h3><a href="https://adapt-training.co.uk">Adapt Training</a></h3>
+		  <p>Adapt required a CRM bolted to their Wordpress Installation.</p>
+		</div>  
+	  </div>
+	</div>
+	
+	<!-- Left and right controls/icons -->
+	<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" style="background-color:rgb(155, 155, 155);"></span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+	  <span class="carousel-control-next-icon"  style="background-color:rgb(168, 167, 167);"></span>
+	</button>
+  </div>
+  
+  <div class="container-fluid mt-3">
+	<h3></h3>
+	<p style="float:right;"><a href="#" onclick="openNav3();">[Other Projects]<a>&nbsp;&nbsp;&nbsp;</p>
+  </div>
+  
+<!-- end carousell -->
+<!--packages-->
+<table style="width:100%; border:0;text-align:center;" class="packages">
+	<tr style="width:100%;">
+		<td>
+			<a href="#" onclick="openNav2();"><img src="1.png"></a>
+		</td>
+		<td>
+			<a href="#" onclick="openNav4();"><img src="2.png"></a>
+		</td>
+
+		<td>
+			<a href="process.html"><img src="3.png"></a>
+		</td>
+		<td>
+			<a href="digital-agency.html"><img src="4.png"></a>
+		</td>
+	</tr>
+</table>
+
+
+<!--end packages-->
+
+
+<!--contact form-->
+<div id="contact" style="text-align:center;padding:50px;background-color:black;color:whitesmoke;">
+<h3>Free Consultation</h3>
+</div>
+<form action="https://aspirecsa.co.uk/wp-content/themes/astra/utilities/form.php">
+
+    
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width:50%;border-top:0;border-left:0;border-right:0;">
+
  
-  <div class="column" style="background-color:rgb(0, 215, 212);">
-    <h2>Call</h2>
-    <p>07898948203</p>
-  </div>
-  <div class="column" style="color:white;">
-    <h2>Email</h2>
-	  Mail Form down. Please use address: 
-    <a href="mailto:tomowens.contact@gmail.com"><p>tomowens.contact@gmail.com</p></a>
-	<!--<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>-->
-<!--<script>
-  hbspt.forms.create({
-    region: "eu1",
-    portalId: "143193807",
-    formId: "2041a356-1534-43e3-aacd-f14010f585f7"
-  });
-</script>-->
-  </div>
+    <input type="text" id="email" name="email" placeholder="Your email or phone number.." style="width:50%;border-top:0;border-left:0;border-right:0;">
+
   
-</div>
-</div>
-<script>
-  function openNav4() {
-    document.getElementById("mySidenav4").style.width = "100%";
-  }
-  
-  function closeNav4() {
-    document.getElementById("mySidenav4").style.width = "0";
-  }
-  </script>
+ 
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" class="submitfm">
+
+  </form>
+<!--end contact form-->
+
+ </div>
 
 
-<div class="centre-piece">
-<div>
-<span><p class="home-title">
-WHEN YOU THINK WEB DESIGN  </p></span>
-  <img src="img/twdw.svg" class="twd-logo">
-<p class="home-bottom">D I G I T A L  -  C O N S U L T A N C Y</p>
-</div>
-</div>
+
+<div  width="100%" style="background-color:#000000;color:#FFFFFF;">
+
 <br></br>
-<br></br><br></br><br></br>
-<br></br><br></br><br></br>
-   <footer class="foot" style="left:0;width:100%!important;position:fixed;bottom:0;padding-top:20px;">
-   <a href="https://www.linkedin.com/in/tom-o-26038928">
-   <img src="img/in.png" class="footer-social"></a>
-   <a href="https://github.com/tomowens08/">
-   <img src="img/gh.png" class="footer-social"></a>
-   </footer>
-</body>
-</html> 
 
+<br></br>
+
+<footer class="foot">
+	<a href="https://www.linkedin.com/in/tom-o-26038928">
+	<img src="http://thinkdigital.js.org/img/in.png" class="footer-social"></a>
+	<a href="https://github.com/tomowens08/">
+	<img src="http://thinkdigital.js.org/img/gh.png" class="footer-social"></a>
+	</footer>
+ 
+ <br></br>
+ <div class="footer-links"><a href="terms.html" title="terms and condisions">T&amp;Cs</a>
+	&nbsp;|&nbsp;<a href="#" onclick="openNav5();">...</a>&nbsp;</div>
+</div>
+
+
+
+
+</body>
+</html>
+<!-- Start of HubSpot Embed Code -->
+  <!--<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/19697913.js"></script>-->
+<!-- End of HubSpot Embed Code -->
