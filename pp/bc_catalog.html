@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grand Bizaar - Eclectic Shopping</title>
+<link rel="stylesheet" href="css/style.css">
+	<script>
+	function bagAdd(){
+		document.getElementById("cartIcon").src="img/cartAdded.png";
+	}
+	</script>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Corbel;
+}
+a{
+color:black;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5 rem;
+  text-align: center;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+
+
+.bc_img{
+height:200px;
+width:auto;
+}
+
+.colu{
+  border-color:black
+  padding: 5px;
+  /*flex-wrap: center; this centers the bottom items but not well*/
+display: block;
+flex-basis:15%;
+margin:2rem;
+min-height:250px;
+padding:0.75rem;
+box-shadow: 0px 10px 30px 9px rgba(0, 0, 0, 0.04);
+}
+.colu a {
+justify-content: space-around; 
+padding: 0.5rem;
+text-align:left!important;
+}
+.colu a:hover {
+background-color:black;
+color:white;
+text-decoration: none;
+
+
+}
+button{
+    background-color:#ff523b;
+	padding:0.5rem;
+	color:black;
+	width:100%;
+	border-size:0.5rem!important;
+	border-color:black;
+	margin-top:1rem;
+	cursor:pointer;
+	border:1;
+}
+button:hover{
+    background-color:black;
+	color:white;
+	transition:0.5s;
+}
+.more-buttons{
+    text-align:left;
+    margin:2rem!important;
+	margin-left:25!important
+	justify-contetn:space-between;
+}
+.more-buttons button{
+    width:unset!important;
+	float:left!important:
+	margin:1rem!important;
+	font-size: strong;
+}
+.desc{
+    max-height:4rem;
+	min-height:4rem;
+	overflow-y:hide;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-left {
+    flex: 100%;
+  }
+}
+footer{
+background-color:black;
+width:100%;
+padding:2rem;
+left:0;
+right:0;
+botton:0
+color:white;
+}
+.footer  {
+color:white!important;
+}
+</style>
+<!-- jsDeliver 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>-->
+
+    <!-- cdnjs -->
+	<script src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+
+                
+
+<body>
+
+
+<div class="container, top">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="img/gblogo.png" alt="Grand Bizaar" width="125px" /></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Gifts</a></li>
+        <li><a href="search.html">Electronics</a></li>
+        <li><a href="search.html">Software</a></li>
+		<li><a href="contact.html">Contact</a></li>
+        <li><a href="stripe.com/login">Stripe Account</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img id="cartIcon" src="img/cart.png" alt="Go to basket" width="30px" height="30px" /></a>
+
+  </div>
+</div>
+
+<div class="small-container">
+  <div class="row row-2">
+    <h2>All Products</h2>
+	<form action="#"><input type="search" class="search" placeholder="Search"></input></form>
+    <select>
+      <option value="">Category Choice</option>
+      <option value="">Electronics</option>
+	  <option value="">Software</option>
+	  <option value="">Nutrition</option>
+	  <option value="">Software</option>
+    </select>
+	<select>
+      <option value="">Default Sorting</option>
+      <option value="">Sort by Price</option>
+      <option value="">Sort by Name</option>
+      <option value="">Sort by Rating</option>
+    </select>
+  </div>
+<div class="outer_cont">
+<h2>Offers may be available on large orders, please enquire.</h2>
+<br><br>
+<div id="test" class="catalog flex-container"></div></div>
+
+ <div class="page-btn">
+    <a href="index.html"><span><</span></a>&nbsp;<a href="#"><span>MORE</span></a>
+  </div>
+</div>
+<h2 class="stripeusp">Stripe provides our Check Out Enviroment for the safest transactions possible.</h2>
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Secure Payment Protection</h3>
+        <p>Stripe hosts our Shopping Cart System. Checkout on Stripe Website.</p>
+        <div class="app-logo">
+		  <img src="img/powered-by-stripe.png" alt="Stripe Protected Payments" />
+          <img src="img/wp.png" alt="World Pay Services" /> 
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="img/gbfooter.png" alt="shopping online" />
+        <p>
+          The Eclectic Shopping Experience
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="randomizer.html">Randomizer</a></li>
+          <li><a href="returns.html">Return Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Customer Links</h3>
+        <ul>
+          <li><a href="stripe.com">Stripe Account</a></li>
+          <li><a href="worldpay.com">Worldpay Account</a></li>
+          <li><a href="contact.html">Pay by Bitcoin</a></li>
+          <li><a href="terms.html">Delivery Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2021 - Grand Bizaar</p>
+  </div>
+</div>
+
+
+<script >
+
+let html = '';
+</script>
+<script type="text/javascript" src="data.js"></script>
+<script>
+// JSON from json_encode($data)
+/*let json = [
+{"prod_id":00,"prod":[{"link":"http:\/\/google.de","title":"Micro SD","price":"5.00","description":"Micro SD 4GB Memory Card, comes with adapter for SD Size, for Android and iOS","img":"msd4"}]},
+{"prod_id":01,"prod":[{"link":"http:\/\/google.de","title":"Second chapter","price":"15.00","description":"Micro SD 4GB Memory Card, comes with adapter for SD Size.","img":"msd4"}]},
+{"prod_id":10,"prod":[{"link":"http:\/\/google.de","title":"Third chapter","price":"81.00","description":"Micro SD","img":"msd4"}]}
+];*/
+		json.forEach(function(element) {
+		  let prod_id = element.prod_id;
+		  let products = element.prod;
+		  
+		  console.log(prod_id);
+		  
+		  products.forEach(function(prod) {
+		    html += '<div class="colu flex-item-left"><span>'+prod.title+'</span><br><img class="bc_img lazy" src="pimg/'+prod.img+'.jpg"><br>'
+			html += '<span>£ '+prod.price+'</span><br></br><div class="desc">'+prod.description+'</div><br>'
+			html += '<a href="details.html?p='+prod.img+'">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html?p'+prod.img+'">Enquire</a><br>'
+			html += '<button>ADD TO BAG</button><button>BUY NOW</button>'
+
+		    console.log(prod.link);
+		    console.log(prod.title);
+		  })
+
+		  html += '</div>'
+		})
+
+		console.log(html);
+
+		document.getElementById('test').innerHTML = html;
+		
+
+
+</script>
+<script>
+
+$(function() {
+        $('.lazy').lazy();
+    });
+</script>
+
+

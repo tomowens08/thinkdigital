@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pills & Powders - Natural Shopping</title>
+<link rel="stylesheet" href="css/gs_style.css">
+
+	<script>
+	function bagAdd(){
+		document.getElementById("cartIcon").src="img/cartAdded.png";
+	}
+
+	</script>
+</head>
+<body>
+
+
+<div class="container, top">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="gslogo.png" alt="Pills and Powders" width="125px" /></a>
+    </div>
+        <nav>
+      <ul id="MenuItems">
+       <span class="dropdown">
+		  <button class="dropbtn">Category &#8595;</button>
+             <div class="dropdown-content">
+                 <a href="supplements.html">Supplements</a>
+                 <a href="nutrients.html">Nutrition</a>
+				 <a href="vitamins.html">Vitamins</a>
+	             <a href="men.html">Men</a>
+	             <a href="women.html">Women</a>
+	             <a href="digestion.html">Digestion</a>
+              </div>
+       </span>
+<!--<span class="dropdown">
+  <button class="dropbtn">Benefit &#8595;</button>
+  <div class="dropdown-content">
+    <a href="brain.html">Mind</a>
+    <a href="energy.html">Energy</a>
+    <a href="diet.html">Dietry</a>
+	<a href="hormones.html">Hormones</a>
+	<a href="sleep.html">Sleep</a>
+  </div>
+  </span>-->
+	
+
+<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img id="cartIcon" src="img/cart.png" alt="Go to basket" width="30px" height="30px" /></a>
+
+  </div>
+</div>
+
+<div class="small-container ">
+  <div class="row row-2 overlay">
+    <h2>Contact</h2>
+
+ <form>
+ <div>
+ <input type="text" placeholder="Your Name" class="ffield"></input>
+ <input type="text" placeholder="Your Company" class="ffield"></input>
+ <input type="text" placeholder="Your Email Address" class="ffield"></input>
+ <input type="text" placeholder="Your Telephone Number" class="ffield"></input>
+ 
+ <select>
+      <option value="">Reason for Contact</option>
+      <option value="">Make an Offer</option>
+	  <option value="">General Enquiry</option>
+    </select>
+	 <select>
+      <option value="">Payment Option</option>
+      <option value="">Non Applicable</option>
+	  <option value="">Bitcoin</option>
+	  <option value="">Cosmos Crypto</option>
+	  <option value="">Other Crypto</option>
+	  <option value="">Stripe</option>
+	  <option value="">Worldpay</option>
+    </select>
+		 	<select>
+      <option value="">Postal Options</option>
+	  <option value="">N/A</option>
+      <option value="">Royal Mail</option>
+	  <option value="">International</option>
+	  <option value="">Special Delivery</option>
+	  <option value="">Collection</option>
+	  <option value="">Same Day Delivery (3 Mile Radius)</option>
+	  <option value="">UPS</option>
+    </select>
+	 Product: <input type="text" placeholder="N/A" style="width:100px;border-color:#0f0;"></input>
+	 <input id="subject_line" placeholder="Subject (Optional)" type="text" value="" class="ffield" style="width:100%;"></input>
+ <textarea rows="8" placeholder="Your Message" style="width:100%;" class="ffield"></textarea>
+ <button>Send</button>
+ </br>
+ </div>
+ </form>
+ </div>
+ </div>
+ </br> </br>
+
+
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Secure Payment Protection</h3>
+        <p>Checkout on our Payment Gateway Page</p>
+        <div class="app-logo">
+		  <img src="img/powered-by-stripe.png" alt="Stripe Protected Payments" />
+          <!-- <img src="img/wp.png" alt="World Pay Services" /> -->
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="img/gbfooter.png" alt="shopping online" />
+        <p>
+          The Natural Shopping Experience
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="pharmacy.html">Pharmacy</a></li>
+          <li><a href="supplements.html">Supplements</a></li>
+          <li><a href="articles-all.html">Articles</a></li>
+		  <li><a href="ingredients.html">Ingredients</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Customer Links</h3>
+        <ul>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="crypto.html">Pay by Bitcoin</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2023 - Pills & Powders</p>
+  </div>
+</div>
+
+<!-- subject vars -->
+<script>
+var $_GET=[];
+window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(a,name,value){$_GET[name]=value;});
+alert($_GET['value']);
+
+</script>
+</script>
+</body>
+</html>

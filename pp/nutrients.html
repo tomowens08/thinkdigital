@@ -2,19 +2,14 @@
 
 <html>
 <head>
-	<title>Pills and Powders | Natural Nutrition, Supplements and Pharmacy Coming soon</title>
-    <meta name="keywords" content="supplements, vitamins, nutrition.">
-	<meta name="description" content="Pills and Powders, supplements, vitmains and nutrition with pharmacy coming soon.">
-	
+	<title>Pills and Powders | Nutrition Products Page | Natural Nutrition, Supplements and Pharmacy Coming soon</title>
+    <meta name="keywords" content="supplements and nutrition, medium sizes">
+	<meta name="description" content="nutritional range of products page.">
 	<script>
 	function bagAdd(){
 		document.getElementById("cartIcon").src="img/cartAdded.png";
 	}
 	</script>
-	<script async src="https://js.stripe.com/v3/buy-button.js">
-</script>
-
-
 	<link rel="stylesheet" href="css/gs_style.css">
 </head>
 <body>
@@ -23,7 +18,7 @@
 <div class="container, top">
   <div class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="gslogo.png" alt="PillsnPowders Logo" width="125px" /></a>
+      <a href="index.html"><img src="gslogo.png" alt="Pills and Powders logo on the nutritions page" width="125px" /></a>
     </div>
     <nav>
       <ul id="MenuItems">
@@ -61,18 +56,7 @@
 <div class="small-container">
   <div class="row row-2">
    <!--<h2>All Products</h2>-->
-	
-		<!--<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for names.." title="Type in a name">
-		<button onclick="sortList()">Sort</button>-->
-	<!--<select>
-      <option value="">Sort by</option>
-      <option value="">Price Highest</option>
-      <option value="">Price Lowest</option>
-	  <option value="">Size Largest</option>
-      <option value="">Size Smallest</option>
-      <option value="">Sort by Rating</option>
-    </select>-->
-	<span class="dropdown" style="position:unset;">
+   <span class="dropdown" style="position:unset;">
   <button class="dropbtn">Sort by &#8595;</button>
   <div class="dropdown-content">
     <a href="large.html">Largest</a>
@@ -81,16 +65,20 @@
 	<a href="lowest.html">Lowest Price</a>
   </div>
   </span>
-  <form action="#"><input id="myInput" type="search" class="search" onkeyup="searchFunction()" placeholder="Search" title="Type in a name"></input></form>
+	<form action="#"><input id="myInput" type="search" class="search" onkeyup="searchFunction()" placeholder="Search" title="Type in a name"></input></form>
+	
+	<!--<select>
+      <option value="">Default Sorting</option>
+      <option value="">Sort by Price</option>
+      <option value="">Sort by Name</option>
+      <!--<option value="">Sort by Rating</option>
+    </select>-->
   </div>
 <div class="outer_cont">
-<!--<h2 class="offers-txt">Offers may be available on large orders, please enquire.</h2>-->
+<h2 class="offers-txt">Nutrition focussed products page.</h2>
 <br><br>
 <div id="test" class="catalog flex-container"></div></div>
-<div class="more-buttons">
-  <a href="all.html"><button id="load-more">All Products</button></a>
 
-</div>
 
 </div>
 
@@ -100,10 +88,10 @@
     <div class="row">
       <div class="footer-col-1">
         <h3>Secure Payment Protection</h3>
-        <p>Checkout on our Payment Gateway Page</p>
+        <p>Checkout on Stripe.</p>
         <div class="app-logo">
 		  <img src="img/powered-by-stripe.png" alt="Stripe Protected Payments" />
-          <!-- <img src="img/wp.png" alt="World Pay Services" /> -->
+          <img src="img/wp.png" alt="World Pay Services" /> 
         </div>
       </div>
 
@@ -117,20 +105,20 @@
       <div class="footer-col-3">
         <h3>Useful Links</h3>
         <ul>
-          <li><a href="pharmacy.html">Pharmacy</a></li>
-          <li><a href="supplements.html">Supplements</a></li>
-          <li><a href="articles-all.html">Articles</a></li>
-		  <li><a href="ingredients.html">Ingredients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="randomizer.html">Randomizer</a></li>
+          <li><a href="returns.html">Return Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
         </ul>
       </div>
 
       <div class="footer-col-4">
         <h3>Customer Links</h3>
         <ul>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="crypto.html">Pay by Bitcoin</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="stripe.com">Stripe Account</a></li>
+          <li><a href="worldpay.com">Worldpay Account</a></li>
+          <li><a href="contact.html">Pay by Bitcoin</a></li>
+          <li><a href="terms.html">Delivery Policy</a></li>
         </ul>
       </div>
     </div>
@@ -144,7 +132,7 @@
 
 let html = '';
 </script>
-<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="js/nutrients.js"></script>
 <script>
 // JSON from json_encode($data)
 /*let json = [
@@ -159,11 +147,10 @@ let html = '';
 		  console.log(prod_id);
 		  
 		  products.forEach(function(prod) {
-		    html += '<div id="items" class="colu flex-item-left"><span>'+prod.title+'</span><br><img src="pimg/'+prod.img+'" class="bc_img" loading="lazy"><br>'
-			html += '<span id="price">£ '+prod.price+'</span><br></br><div class="desc">'+prod.description+'</div><br>'
+		    html += '<div class="colu flex-item-left"><span>'+prod.title+'</span><br><img src="pimg/'+prod.img+'" class="bc_img" loading="lazy"><br>'
+			html += '<span>£ '+prod.price+'</span><br></br><div class="desc">'+prod.description+'</div><br>'
 			html += '<a href="'+prod.link+'">Read More</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html?p='+prod.img+'">Enquire</a><br>'
 			html += '<button><a href="'+prod.stripe+'">PAY</a></button>'
-           
 
 		    console.log(prod.link);
 		    console.log(prod.title);
@@ -197,41 +184,5 @@ function searchFunction() {
   }
 }
 </script>
-<script>
-//sort 
-function sortList() {
-  var list, i, switching, b, shouldSwitch;
-  list = document.getElementById("items");
-  switching = true;
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // start by saying: no switching is done:
-    switching = false;
-    b = list.getElementsById("price");
-    // Loop through all list-items:
-    for (i = 0; i < (b.length - 1); i++) {
-      // start by saying there should be no switching:
-      shouldSwitch = false;
-      /* check if the next item should
-      switch place with the current item: */
-      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-        /* if next item is alphabetically
-        lower than current item, mark as a switch
-        and break the loop: */
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark the switch as done: */
-      b[i].parentNode.insertBefore(b[i + 1], b[i]);
-      switching = true;
-    }
-  }
-}
-</script>
-
 
 
