@@ -7,13 +7,13 @@
 body {
   font-family: Corbel;
 }
-.top{
+.top {
 	top:0;
 	left:0;
 	position:fixed;
 	width:100%;
 	background-color:rgba(555,555,555,1);
-	box-shadow: 0 1px 1px 0 lightgrey;
+	box-shadow: 0 0px 0px 0 lightgrey;
 }
 .stripeusp{
     text-align:center;
@@ -76,7 +76,7 @@ p {
 
 .btn {
   display: inline-block;
-  background: #ff523b;
+  background: #90bb8b;
   color: #ffffff;
   padding: 8px 30px;
   margin: 30px 0;
@@ -85,7 +85,7 @@ p {
 }
 
 .btn:hover {
-  background: #563434;
+  background: #a9bda5;
 }
 
 .header {
@@ -140,7 +140,7 @@ p {
 }
 .title::after {
   content: "";
-  background: #ff523b;
+  background: #90be8c;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -176,7 +176,7 @@ small {
 
 .fa-quote-left {
   font-size: 34px;
-  color: #ff523b;
+  color: #a7cfad;
 }
 
 .col-3 p {
@@ -255,10 +255,11 @@ ul {
 .app-logo img {
   width: 140px;
 }
-.ffieldborder-top: 0px;
+.ffieldborder{
+  top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-color: #7db8ff;
+    border-color: #95cf84;
 	width:48%;
 	
 }
@@ -312,11 +313,11 @@ ul {
 
 .row-2 {
   justify-content: space-between;
-  margin: 100px auto 50px;
+  margin: 40px auto 50px;
 }
 
 select, .search {
-  border: 1px solid #7db8ff;
+  border: 1px solid #91aa89;
   padding: 5px;
 }
 
@@ -330,7 +331,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #ff523b;
+  border: 1px solid #97d19c;
   margin-left: 10px;
   width: 80px;
   height: 40px;
@@ -340,7 +341,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-  background: #ff523b;
+  background: #a7d1a5;
   color: #ffffff;
 }
 
@@ -376,7 +377,7 @@ select:focus {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #ff523b;
+  border: 1px solid #9ecfa6;
 }
 
 input:focus {
@@ -384,7 +385,7 @@ input:focus {
 }
 
 .single-product .fas {
-  color: #ff523b;
+  color: #aece85;
   margin-left: 10px;
 }
 
@@ -418,7 +419,7 @@ th {
   text-align: left;
   padding: 5px;
   color: #ffffff;
-  background: #ff523b;
+  background: #8fc28d;
   font-weight: normal;
 }
 td {
@@ -432,7 +433,7 @@ td input {
 }
 
 td a {
-  color: #ff523b;
+  color: #b5e6a9;
   font-size: 12px;
 }
 
@@ -448,7 +449,7 @@ td img {
 }
 
 .total-price table {
-  border-top: 3px solid #ff523b;
+  border-top: 3px solid #8ac997;
   width: 100%;
   max-width: 400px;
 }
@@ -533,7 +534,7 @@ form a {
 #Indicator {
   width: 100px;
   border: none;
-  background: #ff523b;
+  background: #97d4bd;
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
@@ -598,7 +599,7 @@ button a {
 	border-top:0px;
     border-left: 0px;
     border-right: 0px;
-    border-color: #0f0;
+    border-color: rgb(165, 211, 165);
 	width:48%;
 }
 
@@ -706,5 +707,5 @@ text-decoration: none;
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #7db8ff;}
+.dropdown:hover .dropbtn {background-color: #94caad;}
 
