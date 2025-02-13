@@ -397,3 +397,8 @@ main a:hover {
         width:100%;
         height:auto;
     }
+
+.formFooter {
+    display: unset !important;
+    display: none !important;
+}
